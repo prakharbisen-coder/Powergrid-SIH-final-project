@@ -1,0 +1,8 @@
+﻿{
+  "project_name": "Test Predict",
+  "tower_count": 15,
+  "voltage": "220kV",
+  "tower_type": "Tension",
+  "terrain": "Hilly",
+  "region": "South"
+}

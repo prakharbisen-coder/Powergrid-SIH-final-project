@@ -1,0 +1,4216 @@
+[
+  {
+    "vendor_id": "VEN-OPT-0001",
+    "vendor_name": "Vendor 1",
+    "company_name": "Power Industries Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Hardware",
+      "Steel"
+    ],
+    "prices": {
+      "Hardware": 9973.47,
+      "Steel": 26084.17
+    },
+    "reliability_score": 61.18,
+    "lead_time_days": 15,
+    "capacity": 375,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.3,
+    "total_orders": 203
+  },
+  {
+    "vendor_id": "VEN-OPT-0002",
+    "vendor_name": "Vendor 2",
+    "company_name": "Grid Industries Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Steel",
+      "Earthing"
+    ],
+    "prices": {
+      "Steel": 19214.15,
+      "Earthing": 7103.94
+    },
+    "reliability_score": 88.8,
+    "lead_time_days": 15,
+    "capacity": 3505,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.3,
+    "total_orders": 286
+  },
+  {
+    "vendor_id": "VEN-OPT-0003",
+    "vendor_name": "Vendor 3",
+    "company_name": "Electric Systems Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 96502.86
+    },
+    "reliability_score": 77.24,
+    "lead_time_days": 15,
+    "capacity": 3564,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.7,
+    "total_orders": 419
+  },
+  {
+    "vendor_id": "VEN-OPT-0004",
+    "vendor_name": "Vendor 4",
+    "company_name": "Power Corp Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 18084.26
+    },
+    "reliability_score": 67.81,
+    "lead_time_days": 6,
+    "capacity": 1054,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.5,
+    "total_orders": 365
+  },
+  {
+    "vendor_id": "VEN-OPT-0005",
+    "vendor_name": "Vendor 5",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Hardware",
+      "Conductors",
+      "Insulators"
+    ],
+    "prices": {
+      "Hardware": 10267.48,
+      "Conductors": 2710.94,
+      "Insulators": 7009.34
+    },
+    "reliability_score": 75.53,
+    "lead_time_days": 16,
+    "capacity": 4870,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.4,
+    "total_orders": 218
+  },
+  {
+    "vendor_id": "VEN-OPT-0006",
+    "vendor_name": "Vendor 6",
+    "company_name": "Energy Corp Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Insulators",
+      "Towers"
+    ],
+    "prices": {
+      "Insulators": 9660.86,
+      "Towers": 46058.18
+    },
+    "reliability_score": 99.13,
+    "lead_time_days": 5,
+    "capacity": 4037,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.2,
+    "total_orders": 40
+  },
+  {
+    "vendor_id": "VEN-OPT-0007",
+    "vendor_name": "Vendor 7",
+    "company_name": "Electric Systems Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Earthing"
+    ],
+    "prices": {
+      "Earthing": 3241.72
+    },
+    "reliability_score": 62.12,
+    "lead_time_days": 12,
+    "capacity": 1359,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 96
+  },
+  {
+    "vendor_id": "VEN-OPT-0008",
+    "vendor_name": "Vendor 8",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Transformers",
+      "Cables"
+    ],
+    "prices": {
+      "Transformers": 95074.53,
+      "Cables": 4199.33
+    },
+    "reliability_score": 93.68,
+    "lead_time_days": 5,
+    "capacity": 3460,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.6,
+    "total_orders": 202
+  },
+  {
+    "vendor_id": "VEN-OPT-0009",
+    "vendor_name": "Vendor 9",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 162242.16
+    },
+    "reliability_score": 100,
+    "lead_time_days": 22,
+    "capacity": 1229,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.3,
+    "total_orders": 179
+  },
+  {
+    "vendor_id": "VEN-OPT-0010",
+    "vendor_name": "Vendor 10",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Towers",
+      "Cables"
+    ],
+    "prices": {
+      "Towers": 33361.63,
+      "Cables": 14402.66
+    },
+    "reliability_score": 87.05,
+    "lead_time_days": 11,
+    "capacity": 2270,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.5,
+    "total_orders": 365
+  },
+  {
+    "vendor_id": "VEN-OPT-0011",
+    "vendor_name": "Vendor 11",
+    "company_name": "Electric Industries Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Cables",
+      "Steel",
+      "Switchgear"
+    ],
+    "prices": {
+      "Cables": 14608.7,
+      "Steel": 38263.96,
+      "Switchgear": 113275.84
+    },
+    "reliability_score": 87.26,
+    "lead_time_days": 9,
+    "capacity": 3783,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.0,
+    "total_orders": 324
+  },
+  {
+    "vendor_id": "VEN-OPT-0012",
+    "vendor_name": "Vendor 12",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 175517.05
+    },
+    "reliability_score": 92.29,
+    "lead_time_days": 15,
+    "capacity": 962,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.2,
+    "total_orders": 440
+  },
+  {
+    "vendor_id": "VEN-OPT-0013",
+    "vendor_name": "Vendor 13",
+    "company_name": "Tech Systems Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Cables"
+    ],
+    "prices": {
+      "Cables": 18002.8
+    },
+    "reliability_score": 93.31,
+    "lead_time_days": 13,
+    "capacity": 2747,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.3,
+    "total_orders": 35
+  },
+  {
+    "vendor_id": "VEN-OPT-0014",
+    "vendor_name": "Vendor 14",
+    "company_name": "Grid Corp Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Steel",
+      "Others",
+      "Towers"
+    ],
+    "prices": {
+      "Steel": 13190.68,
+      "Others": 17365.49,
+      "Towers": 25432.85
+    },
+    "reliability_score": 100,
+    "lead_time_days": 16,
+    "capacity": 1669,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.9,
+    "total_orders": 450
+  },
+  {
+    "vendor_id": "VEN-OPT-0015",
+    "vendor_name": "Vendor 15",
+    "company_name": "Energy Systems Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Insulators",
+      "Hardware"
+    ],
+    "prices": {
+      "Insulators": 2971.27,
+      "Hardware": 5377.75
+    },
+    "reliability_score": 80.26,
+    "lead_time_days": 12,
+    "capacity": 3974,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.7,
+    "total_orders": 168
+  },
+  {
+    "vendor_id": "VEN-OPT-0016",
+    "vendor_name": "Vendor 16",
+    "company_name": "Electric Systems Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Steel",
+      "Towers"
+    ],
+    "prices": {
+      "Steel": 46221.03,
+      "Towers": 11069.76
+    },
+    "reliability_score": 98.59,
+    "lead_time_days": 19,
+    "capacity": 282,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.6,
+    "total_orders": 380
+  },
+  {
+    "vendor_id": "VEN-OPT-0017",
+    "vendor_name": "Vendor 17",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Hardware",
+      "Towers",
+      "Insulators"
+    ],
+    "prices": {
+      "Hardware": 2909.23,
+      "Towers": 22892.42,
+      "Insulators": 3206.04
+    },
+    "reliability_score": 93.49,
+    "lead_time_days": 18,
+    "capacity": 2009,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 5.0,
+    "total_orders": 164
+  },
+  {
+    "vendor_id": "VEN-OPT-0018",
+    "vendor_name": "Vendor 18",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Conductors",
+      "Earthing"
+    ],
+    "prices": {
+      "Conductors": 6930.07,
+      "Earthing": 11184.81
+    },
+    "reliability_score": 100,
+    "lead_time_days": 9,
+    "capacity": 3486,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.7,
+    "total_orders": 134
+  },
+  {
+    "vendor_id": "VEN-OPT-0019",
+    "vendor_name": "Vendor 19",
+    "company_name": "Power Engineering Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Cables",
+      "Earthing",
+      "Hardware"
+    ],
+    "prices": {
+      "Cables": 7609.05,
+      "Earthing": 12786.1,
+      "Hardware": 4785.17
+    },
+    "reliability_score": 72.65,
+    "lead_time_days": 11,
+    "capacity": 1681,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.7,
+    "total_orders": 11
+  },
+  {
+    "vendor_id": "VEN-OPT-0020",
+    "vendor_name": "Vendor 20",
+    "company_name": "Power Corp Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Switchgear",
+      "Steel"
+    ],
+    "prices": {
+      "Switchgear": 196685.67,
+      "Steel": 13362.01
+    },
+    "reliability_score": 90.91,
+    "lead_time_days": 12,
+    "capacity": 4678,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.7,
+    "total_orders": 148
+  },
+  {
+    "vendor_id": "VEN-OPT-0021",
+    "vendor_name": "Vendor 21",
+    "company_name": "Energy Corp Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 18789.51
+    },
+    "reliability_score": 68.91,
+    "lead_time_days": 17,
+    "capacity": 2392,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.6,
+    "total_orders": 164
+  },
+  {
+    "vendor_id": "VEN-OPT-0022",
+    "vendor_name": "Vendor 22",
+    "company_name": "Power Industries Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Hardware",
+      "Conductors"
+    ],
+    "prices": {
+      "Hardware": 4569.9,
+      "Conductors": 1651.89
+    },
+    "reliability_score": 72.39,
+    "lead_time_days": 11,
+    "capacity": 228,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.8,
+    "total_orders": 475
+  },
+  {
+    "vendor_id": "VEN-OPT-0023",
+    "vendor_name": "Vendor 23",
+    "company_name": "Grid Solutions Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Conductors"
+    ],
+    "prices": {
+      "Conductors": 19969.53
+    },
+    "reliability_score": 91.75,
+    "lead_time_days": 13,
+    "capacity": 1089,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.9,
+    "total_orders": 490
+  },
+  {
+    "vendor_id": "VEN-OPT-0024",
+    "vendor_name": "Vendor 24",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Conductors",
+      "Hardware"
+    ],
+    "prices": {
+      "Conductors": 15276.41,
+      "Hardware": 3419.63
+    },
+    "reliability_score": 100,
+    "lead_time_days": 14,
+    "capacity": 2496,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 301
+  },
+  {
+    "vendor_id": "VEN-OPT-0025",
+    "vendor_name": "Vendor 25",
+    "company_name": "Tech Corp Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Cables",
+      "Switchgear",
+      "Steel"
+    ],
+    "prices": {
+      "Cables": 12062.94,
+      "Switchgear": 148429.02,
+      "Steel": 25224.34
+    },
+    "reliability_score": 85.23,
+    "lead_time_days": 7,
+    "capacity": 815,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.9,
+    "total_orders": 401
+  },
+  {
+    "vendor_id": "VEN-OPT-0026",
+    "vendor_name": "Vendor 26",
+    "company_name": "Grid Systems Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Towers",
+      "Others"
+    ],
+    "prices": {
+      "Towers": 13659.34,
+      "Others": 7281.41
+    },
+    "reliability_score": 96.05,
+    "lead_time_days": 17,
+    "capacity": 4062,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.9,
+    "total_orders": 159
+  },
+  {
+    "vendor_id": "VEN-OPT-0027",
+    "vendor_name": "Vendor 27",
+    "company_name": "Power Engineering Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Earthing",
+      "Switchgear",
+      "Steel"
+    ],
+    "prices": {
+      "Earthing": 19556.45,
+      "Switchgear": 134121.28,
+      "Steel": 37680.96
+    },
+    "reliability_score": 88.2,
+    "lead_time_days": 6,
+    "capacity": 566,
+    "available": false,
+    "payment_terms": "30-days",
+    "rating": 4.3,
+    "total_orders": 109
+  },
+  {
+    "vendor_id": "VEN-OPT-0028",
+    "vendor_name": "Vendor 28",
+    "company_name": "Energy Industries Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Cables"
+    ],
+    "prices": {
+      "Cables": 9120.92
+    },
+    "reliability_score": 74.69,
+    "lead_time_days": 13,
+    "capacity": 2308,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.0,
+    "total_orders": 90
+  },
+  {
+    "vendor_id": "VEN-OPT-0029",
+    "vendor_name": "Vendor 29",
+    "company_name": "Energy Corp Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 51551.82
+    },
+    "reliability_score": 87.99,
+    "lead_time_days": 14,
+    "capacity": 3787,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.5,
+    "total_orders": 25
+  },
+  {
+    "vendor_id": "VEN-OPT-0030",
+    "vendor_name": "Vendor 30",
+    "company_name": "Energy Systems Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 14839.32
+    },
+    "reliability_score": 83.53,
+    "lead_time_days": 5,
+    "capacity": 3660,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.7,
+    "total_orders": 270
+  },
+  {
+    "vendor_id": "VEN-OPT-0031",
+    "vendor_name": "Vendor 31",
+    "company_name": "Power Engineering Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Others",
+      "Transformers"
+    ],
+    "prices": {
+      "Others": 5356.75,
+      "Transformers": 93783.43
+    },
+    "reliability_score": 90.49,
+    "lead_time_days": 5,
+    "capacity": 358,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.6,
+    "total_orders": 499
+  },
+  {
+    "vendor_id": "VEN-OPT-0032",
+    "vendor_name": "Vendor 32",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Conductors",
+      "Hardware"
+    ],
+    "prices": {
+      "Conductors": 12663.07,
+      "Hardware": 7698.9
+    },
+    "reliability_score": 95.56,
+    "lead_time_days": 10,
+    "capacity": 3093,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.9,
+    "total_orders": 162
+  },
+  {
+    "vendor_id": "VEN-OPT-0033",
+    "vendor_name": "Vendor 33",
+    "company_name": "Electric Industries Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Towers"
+    ],
+    "prices": {
+      "Towers": 32636.41
+    },
+    "reliability_score": 100,
+    "lead_time_days": 19,
+    "capacity": 2246,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 103
+  },
+  {
+    "vendor_id": "VEN-OPT-0034",
+    "vendor_name": "Vendor 34",
+    "company_name": "Electric Industries Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Hardware",
+      "Transformers",
+      "Conductors"
+    ],
+    "prices": {
+      "Hardware": 6763.79,
+      "Transformers": 194144.3,
+      "Conductors": 6279.45
+    },
+    "reliability_score": 66.05,
+    "lead_time_days": 19,
+    "capacity": 3827,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.8,
+    "total_orders": 106
+  },
+  {
+    "vendor_id": "VEN-OPT-0035",
+    "vendor_name": "Vendor 35",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Insulators",
+      "Conductors"
+    ],
+    "prices": {
+      "Insulators": 8446.78,
+      "Conductors": 17417.05
+    },
+    "reliability_score": 87.55,
+    "lead_time_days": 5,
+    "capacity": 2754,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.9,
+    "total_orders": 400
+  },
+  {
+    "vendor_id": "VEN-OPT-0036",
+    "vendor_name": "Vendor 36",
+    "company_name": "Tech Engineering Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 10566.56
+    },
+    "reliability_score": 87.37,
+    "lead_time_days": 13,
+    "capacity": 275,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.9,
+    "total_orders": 201
+  },
+  {
+    "vendor_id": "VEN-OPT-0037",
+    "vendor_name": "Vendor 37",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Earthing",
+      "Towers",
+      "Hardware"
+    ],
+    "prices": {
+      "Earthing": 18308.32,
+      "Towers": 13053.39,
+      "Hardware": 5077.34
+    },
+    "reliability_score": 96.25,
+    "lead_time_days": 21,
+    "capacity": 228,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.6,
+    "total_orders": 59
+  },
+  {
+    "vendor_id": "VEN-OPT-0038",
+    "vendor_name": "Vendor 38",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Steel",
+      "Cables",
+      "Insulators"
+    ],
+    "prices": {
+      "Steel": 23288.32,
+      "Cables": 1120.76,
+      "Insulators": 18512.51
+    },
+    "reliability_score": 65.46,
+    "lead_time_days": 20,
+    "capacity": 3548,
+    "available": false,
+    "payment_terms": "45-days",
+    "rating": 4.9,
+    "total_orders": 398
+  },
+  {
+    "vendor_id": "VEN-OPT-0039",
+    "vendor_name": "Vendor 39",
+    "company_name": "Electric Industries Ltd",
+    "location": "Mumbai",
+    "specializations": [
+      "Hardware",
+      "Others",
+      "Steel"
+    ],
+    "prices": {
+      "Hardware": 19054.32,
+      "Others": 16283.17,
+      "Steel": 10809.26
+    },
+    "reliability_score": 73.91,
+    "lead_time_days": 14,
+    "capacity": 4576,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 242
+  },
+  {
+    "vendor_id": "VEN-OPT-0040",
+    "vendor_name": "Vendor 40",
+    "company_name": "Power Engineering Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Switchgear",
+      "Transformers",
+      "Others"
+    ],
+    "prices": {
+      "Switchgear": 194623.99,
+      "Transformers": 181055.48,
+      "Others": 17736.05
+    },
+    "reliability_score": 85.65,
+    "lead_time_days": 9,
+    "capacity": 3731,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.5,
+    "total_orders": 441
+  },
+  {
+    "vendor_id": "VEN-OPT-0041",
+    "vendor_name": "Vendor 41",
+    "company_name": "Energy Systems Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Cables",
+      "Others",
+      "Transformers"
+    ],
+    "prices": {
+      "Cables": 17106.34,
+      "Others": 12930.11,
+      "Transformers": 100093.65
+    },
+    "reliability_score": 92.77,
+    "lead_time_days": 9,
+    "capacity": 2405,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 110
+  },
+  {
+    "vendor_id": "VEN-OPT-0042",
+    "vendor_name": "Vendor 42",
+    "company_name": "Electric Systems Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Others",
+      "Insulators"
+    ],
+    "prices": {
+      "Others": 19331.98,
+      "Insulators": 5492.51
+    },
+    "reliability_score": 99.43,
+    "lead_time_days": 8,
+    "capacity": 4325,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 249
+  },
+  {
+    "vendor_id": "VEN-OPT-0043",
+    "vendor_name": "Vendor 43",
+    "company_name": "Grid Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Steel",
+      "Switchgear"
+    ],
+    "prices": {
+      "Steel": 39890.3,
+      "Switchgear": 131790.25
+    },
+    "reliability_score": 82.83,
+    "lead_time_days": 10,
+    "capacity": 2402,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.6,
+    "total_orders": 235
+  },
+  {
+    "vendor_id": "VEN-OPT-0044",
+    "vendor_name": "Vendor 44",
+    "company_name": "Grid Systems Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 13000.23
+    },
+    "reliability_score": 81.96,
+    "lead_time_days": 11,
+    "capacity": 4875,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.4,
+    "total_orders": 328
+  },
+  {
+    "vendor_id": "VEN-OPT-0045",
+    "vendor_name": "Vendor 45",
+    "company_name": "Grid Systems Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Steel",
+      "Towers"
+    ],
+    "prices": {
+      "Steel": 41216.32,
+      "Towers": 20141.2
+    },
+    "reliability_score": 100,
+    "lead_time_days": 7,
+    "capacity": 1158,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.6,
+    "total_orders": 459
+  },
+  {
+    "vendor_id": "VEN-OPT-0046",
+    "vendor_name": "Vendor 46",
+    "company_name": "Power Industries Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Switchgear",
+      "Steel",
+      "Hardware"
+    ],
+    "prices": {
+      "Switchgear": 67741.09,
+      "Steel": 30520.77,
+      "Hardware": 17275.46
+    },
+    "reliability_score": 80.27,
+    "lead_time_days": 5,
+    "capacity": 4105,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.7,
+    "total_orders": 172
+  },
+  {
+    "vendor_id": "VEN-OPT-0047",
+    "vendor_name": "Vendor 47",
+    "company_name": "Power Systems Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Others",
+      "Conductors",
+      "Earthing"
+    ],
+    "prices": {
+      "Others": 1332.76,
+      "Conductors": 14507.19,
+      "Earthing": 13409.65
+    },
+    "reliability_score": 72.17,
+    "lead_time_days": 15,
+    "capacity": 3936,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.7,
+    "total_orders": 467
+  },
+  {
+    "vendor_id": "VEN-OPT-0048",
+    "vendor_name": "Vendor 48",
+    "company_name": "Electric Corp Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 115203.55
+    },
+    "reliability_score": 92.02,
+    "lead_time_days": 15,
+    "capacity": 414,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 5.0,
+    "total_orders": 332
+  },
+  {
+    "vendor_id": "VEN-OPT-0049",
+    "vendor_name": "Vendor 49",
+    "company_name": "Power Solutions Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Others",
+      "Insulators",
+      "Transformers"
+    ],
+    "prices": {
+      "Others": 12058.43,
+      "Insulators": 9127.32,
+      "Transformers": 100606.99
+    },
+    "reliability_score": 91.79,
+    "lead_time_days": 15,
+    "capacity": 1841,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.4,
+    "total_orders": 452
+  },
+  {
+    "vendor_id": "VEN-OPT-0050",
+    "vendor_name": "Vendor 50",
+    "company_name": "Grid Systems Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Insulators",
+      "Towers",
+      "Others"
+    ],
+    "prices": {
+      "Insulators": 17142.09,
+      "Towers": 48716.33,
+      "Others": 15993.24
+    },
+    "reliability_score": 69.44,
+    "lead_time_days": 17,
+    "capacity": 2528,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.6,
+    "total_orders": 104
+  },
+  {
+    "vendor_id": "VEN-OPT-0051",
+    "vendor_name": "Vendor 51",
+    "company_name": "Tech Engineering Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Cables",
+      "Earthing",
+      "Insulators"
+    ],
+    "prices": {
+      "Cables": 5691.76,
+      "Earthing": 13917.82,
+      "Insulators": 15056.97
+    },
+    "reliability_score": 75.46,
+    "lead_time_days": 7,
+    "capacity": 472,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.6,
+    "total_orders": 102
+  },
+  {
+    "vendor_id": "VEN-OPT-0052",
+    "vendor_name": "Vendor 52",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 92134.14
+    },
+    "reliability_score": 93.31,
+    "lead_time_days": 15,
+    "capacity": 3625,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.8,
+    "total_orders": 252
+  },
+  {
+    "vendor_id": "VEN-OPT-0053",
+    "vendor_name": "Vendor 53",
+    "company_name": "Tech Industries Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Steel",
+      "Transformers"
+    ],
+    "prices": {
+      "Steel": 37662.66,
+      "Transformers": 185806.2
+    },
+    "reliability_score": 75.4,
+    "lead_time_days": 12,
+    "capacity": 2192,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.8,
+    "total_orders": 374
+  },
+  {
+    "vendor_id": "VEN-OPT-0054",
+    "vendor_name": "Vendor 54",
+    "company_name": "Grid Solutions Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Insulators",
+      "Transformers",
+      "Earthing"
+    ],
+    "prices": {
+      "Insulators": 13540.85,
+      "Transformers": 59084.24,
+      "Earthing": 16798.95
+    },
+    "reliability_score": 85.95,
+    "lead_time_days": 9,
+    "capacity": 2284,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.9,
+    "total_orders": 424
+  },
+  {
+    "vendor_id": "VEN-OPT-0055",
+    "vendor_name": "Vendor 55",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Switchgear",
+      "Towers",
+      "Earthing"
+    ],
+    "prices": {
+      "Switchgear": 148103.88,
+      "Towers": 25992.43,
+      "Earthing": 9737.86
+    },
+    "reliability_score": 90.07,
+    "lead_time_days": 16,
+    "capacity": 1948,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.2,
+    "total_orders": 132
+  },
+  {
+    "vendor_id": "VEN-OPT-0056",
+    "vendor_name": "Vendor 56",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Earthing",
+      "Switchgear"
+    ],
+    "prices": {
+      "Earthing": 1105.4,
+      "Switchgear": 109647.68
+    },
+    "reliability_score": 96.96,
+    "lead_time_days": 5,
+    "capacity": 2027,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.1,
+    "total_orders": 124
+  },
+  {
+    "vendor_id": "VEN-OPT-0057",
+    "vendor_name": "Vendor 57",
+    "company_name": "Tech Systems Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Others",
+      "Conductors"
+    ],
+    "prices": {
+      "Others": 6587.91,
+      "Conductors": 13275.9
+    },
+    "reliability_score": 88.58,
+    "lead_time_days": 7,
+    "capacity": 800,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.3,
+    "total_orders": 312
+  },
+  {
+    "vendor_id": "VEN-OPT-0058",
+    "vendor_name": "Vendor 58",
+    "company_name": "Grid Corp Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Towers"
+    ],
+    "prices": {
+      "Towers": 30504.72
+    },
+    "reliability_score": 77.59,
+    "lead_time_days": 13,
+    "capacity": 4950,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.8,
+    "total_orders": 323
+  },
+  {
+    "vendor_id": "VEN-OPT-0059",
+    "vendor_name": "Vendor 59",
+    "company_name": "Power Systems Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Earthing"
+    ],
+    "prices": {
+      "Earthing": 17139.52
+    },
+    "reliability_score": 84.04,
+    "lead_time_days": 5,
+    "capacity": 2563,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.6,
+    "total_orders": 107
+  },
+  {
+    "vendor_id": "VEN-OPT-0060",
+    "vendor_name": "Vendor 60",
+    "company_name": "Power Industries Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Insulators",
+      "Steel",
+      "Transformers"
+    ],
+    "prices": {
+      "Insulators": 18245.3,
+      "Steel": 21172.72,
+      "Transformers": 129240.08
+    },
+    "reliability_score": 82.98,
+    "lead_time_days": 18,
+    "capacity": 351,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.4,
+    "total_orders": 437
+  },
+  {
+    "vendor_id": "VEN-OPT-0061",
+    "vendor_name": "Vendor 61",
+    "company_name": "Energy Corp Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Earthing",
+      "Switchgear",
+      "Transformers"
+    ],
+    "prices": {
+      "Earthing": 8713.02,
+      "Switchgear": 106797.45,
+      "Transformers": 192586.02
+    },
+    "reliability_score": 83.95,
+    "lead_time_days": 9,
+    "capacity": 963,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.4,
+    "total_orders": 201
+  },
+  {
+    "vendor_id": "VEN-OPT-0062",
+    "vendor_name": "Vendor 62",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 76769.17
+    },
+    "reliability_score": 100,
+    "lead_time_days": 10,
+    "capacity": 2772,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 5.0,
+    "total_orders": 238
+  },
+  {
+    "vendor_id": "VEN-OPT-0063",
+    "vendor_name": "Vendor 63",
+    "company_name": "Tech Engineering Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Towers",
+      "Transformers"
+    ],
+    "prices": {
+      "Towers": 15503.86,
+      "Transformers": 94202.13
+    },
+    "reliability_score": 89.76,
+    "lead_time_days": 5,
+    "capacity": 3791,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.2,
+    "total_orders": 236
+  },
+  {
+    "vendor_id": "VEN-OPT-0064",
+    "vendor_name": "Vendor 64",
+    "company_name": "Power Engineering Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Others",
+      "Towers",
+      "Conductors"
+    ],
+    "prices": {
+      "Others": 10605.65,
+      "Towers": 35052.08,
+      "Conductors": 16844.35
+    },
+    "reliability_score": 79.38,
+    "lead_time_days": 5,
+    "capacity": 3552,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.9,
+    "total_orders": 63
+  },
+  {
+    "vendor_id": "VEN-OPT-0065",
+    "vendor_name": "Vendor 65",
+    "company_name": "Energy Systems Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Towers"
+    ],
+    "prices": {
+      "Towers": 20999.82
+    },
+    "reliability_score": 76.23,
+    "lead_time_days": 18,
+    "capacity": 1328,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.6,
+    "total_orders": 465
+  },
+  {
+    "vendor_id": "VEN-OPT-0066",
+    "vendor_name": "Vendor 66",
+    "company_name": "Power Industries Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Insulators",
+      "Earthing",
+      "Cables"
+    ],
+    "prices": {
+      "Insulators": 10769.64,
+      "Earthing": 7341.17,
+      "Cables": 12836.43
+    },
+    "reliability_score": 97.57,
+    "lead_time_days": 9,
+    "capacity": 2275,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.9,
+    "total_orders": 489
+  },
+  {
+    "vendor_id": "VEN-OPT-0067",
+    "vendor_name": "Vendor 67",
+    "company_name": "Grid Industries Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Insulators",
+      "Hardware",
+      "Cables"
+    ],
+    "prices": {
+      "Insulators": 15600.06,
+      "Hardware": 18096.92,
+      "Cables": 10122.28
+    },
+    "reliability_score": 84.35,
+    "lead_time_days": 5,
+    "capacity": 589,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.0,
+    "total_orders": 45
+  },
+  {
+    "vendor_id": "VEN-OPT-0068",
+    "vendor_name": "Vendor 68",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Towers",
+      "Cables"
+    ],
+    "prices": {
+      "Towers": 41069.9,
+      "Cables": 14486.9
+    },
+    "reliability_score": 92.78,
+    "lead_time_days": 11,
+    "capacity": 2109,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.3,
+    "total_orders": 247
+  },
+  {
+    "vendor_id": "VEN-OPT-0069",
+    "vendor_name": "Vendor 69",
+    "company_name": "Grid Systems Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Earthing",
+      "Insulators"
+    ],
+    "prices": {
+      "Earthing": 3616.18,
+      "Insulators": 4568.8
+    },
+    "reliability_score": 88.43,
+    "lead_time_days": 14,
+    "capacity": 144,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.6,
+    "total_orders": 55
+  },
+  {
+    "vendor_id": "VEN-OPT-0070",
+    "vendor_name": "Vendor 70",
+    "company_name": "Electric Corp Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Hardware",
+      "Steel"
+    ],
+    "prices": {
+      "Hardware": 5172.78,
+      "Steel": 12862.29
+    },
+    "reliability_score": 65.51,
+    "lead_time_days": 15,
+    "capacity": 1576,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.9,
+    "total_orders": 327
+  },
+  {
+    "vendor_id": "VEN-OPT-0071",
+    "vendor_name": "Vendor 71",
+    "company_name": "Tech Systems Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 2971.25
+    },
+    "reliability_score": 86.17,
+    "lead_time_days": 11,
+    "capacity": 4451,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.2,
+    "total_orders": 46
+  },
+  {
+    "vendor_id": "VEN-OPT-0072",
+    "vendor_name": "Vendor 72",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Others",
+      "Towers"
+    ],
+    "prices": {
+      "Others": 17310.26,
+      "Towers": 20719.51
+    },
+    "reliability_score": 87.18,
+    "lead_time_days": 10,
+    "capacity": 2430,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.6,
+    "total_orders": 436
+  },
+  {
+    "vendor_id": "VEN-OPT-0073",
+    "vendor_name": "Vendor 73",
+    "company_name": "Tech Corp Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Steel",
+      "Transformers",
+      "Others"
+    ],
+    "prices": {
+      "Steel": 19416.15,
+      "Transformers": 115833.68,
+      "Others": 13644.26
+    },
+    "reliability_score": 78.92,
+    "lead_time_days": 12,
+    "capacity": 4104,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.9,
+    "total_orders": 489
+  },
+  {
+    "vendor_id": "VEN-OPT-0074",
+    "vendor_name": "Vendor 74",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Insulators",
+      "Others",
+      "Steel"
+    ],
+    "prices": {
+      "Insulators": 3636.18,
+      "Others": 15128.27,
+      "Steel": 35542.65
+    },
+    "reliability_score": 83.85,
+    "lead_time_days": 24,
+    "capacity": 3251,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.9,
+    "total_orders": 98
+  },
+  {
+    "vendor_id": "VEN-OPT-0075",
+    "vendor_name": "Vendor 75",
+    "company_name": "Electric Systems Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 14203.8
+    },
+    "reliability_score": 72.61,
+    "lead_time_days": 6,
+    "capacity": 686,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.7,
+    "total_orders": 415
+  },
+  {
+    "vendor_id": "VEN-OPT-0076",
+    "vendor_name": "Vendor 76",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Transformers",
+      "Insulators"
+    ],
+    "prices": {
+      "Transformers": 129820.86,
+      "Insulators": 3200.19
+    },
+    "reliability_score": 81.68,
+    "lead_time_days": 11,
+    "capacity": 3007,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.9,
+    "total_orders": 178
+  },
+  {
+    "vendor_id": "VEN-OPT-0077",
+    "vendor_name": "Vendor 77",
+    "company_name": "Tech Industries Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Insulators",
+      "Cables",
+      "Earthing"
+    ],
+    "prices": {
+      "Insulators": 12476.42,
+      "Cables": 1915.82,
+      "Earthing": 19327.75
+    },
+    "reliability_score": 71.08,
+    "lead_time_days": 12,
+    "capacity": 1967,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.3,
+    "total_orders": 440
+  },
+  {
+    "vendor_id": "VEN-OPT-0078",
+    "vendor_name": "Vendor 78",
+    "company_name": "Tech Industries Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Transformers",
+      "Towers",
+      "Steel"
+    ],
+    "prices": {
+      "Transformers": 141164.44,
+      "Towers": 31744.81,
+      "Steel": 30944.72
+    },
+    "reliability_score": 77.78,
+    "lead_time_days": 12,
+    "capacity": 1673,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.7,
+    "total_orders": 169
+  },
+  {
+    "vendor_id": "VEN-OPT-0079",
+    "vendor_name": "Vendor 79",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 13150.11
+    },
+    "reliability_score": 79.69,
+    "lead_time_days": 6,
+    "capacity": 2274,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.3,
+    "total_orders": 76
+  },
+  {
+    "vendor_id": "VEN-OPT-0080",
+    "vendor_name": "Vendor 80",
+    "company_name": "Electric Industries Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 156728.03
+    },
+    "reliability_score": 82.0,
+    "lead_time_days": 12,
+    "capacity": 2467,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.9,
+    "total_orders": 14
+  },
+  {
+    "vendor_id": "VEN-OPT-0081",
+    "vendor_name": "Vendor 81",
+    "company_name": "Tech Industries Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Others",
+      "Conductors"
+    ],
+    "prices": {
+      "Others": 7033.67,
+      "Conductors": 2417.87
+    },
+    "reliability_score": 76.89,
+    "lead_time_days": 18,
+    "capacity": 2460,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.5,
+    "total_orders": 94
+  },
+  {
+    "vendor_id": "VEN-OPT-0082",
+    "vendor_name": "Vendor 82",
+    "company_name": "Tech Industries Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Conductors",
+      "Hardware",
+      "Towers"
+    ],
+    "prices": {
+      "Conductors": 9555.18,
+      "Hardware": 8797.79,
+      "Towers": 34707.1
+    },
+    "reliability_score": 82.26,
+    "lead_time_days": 24,
+    "capacity": 4555,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.8,
+    "total_orders": 66
+  },
+  {
+    "vendor_id": "VEN-OPT-0083",
+    "vendor_name": "Vendor 83",
+    "company_name": "Grid Industries Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Towers",
+      "Transformers"
+    ],
+    "prices": {
+      "Towers": 35003.91,
+      "Transformers": 155457.37
+    },
+    "reliability_score": 78.54,
+    "lead_time_days": 10,
+    "capacity": 4873,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 219
+  },
+  {
+    "vendor_id": "VEN-OPT-0084",
+    "vendor_name": "Vendor 84",
+    "company_name": "Energy Industries Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Earthing",
+      "Towers"
+    ],
+    "prices": {
+      "Earthing": 19181.98,
+      "Towers": 41438.36
+    },
+    "reliability_score": 60.96,
+    "lead_time_days": 13,
+    "capacity": 4429,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.7,
+    "total_orders": 22
+  },
+  {
+    "vendor_id": "VEN-OPT-0085",
+    "vendor_name": "Vendor 85",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 2962.92
+    },
+    "reliability_score": 65.29,
+    "lead_time_days": 8,
+    "capacity": 1875,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.8,
+    "total_orders": 45
+  },
+  {
+    "vendor_id": "VEN-OPT-0086",
+    "vendor_name": "Vendor 86",
+    "company_name": "Power Systems Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Cables",
+      "Insulators",
+      "Steel"
+    ],
+    "prices": {
+      "Cables": 2994.96,
+      "Insulators": 7070.89,
+      "Steel": 47051.91
+    },
+    "reliability_score": 96.97,
+    "lead_time_days": 15,
+    "capacity": 4454,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.1,
+    "total_orders": 312
+  },
+  {
+    "vendor_id": "VEN-OPT-0087",
+    "vendor_name": "Vendor 87",
+    "company_name": "Power Industries Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Hardware",
+      "Transformers"
+    ],
+    "prices": {
+      "Hardware": 11522.89,
+      "Transformers": 97356.08
+    },
+    "reliability_score": 61.53,
+    "lead_time_days": 11,
+    "capacity": 2436,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.6,
+    "total_orders": 486
+  },
+  {
+    "vendor_id": "VEN-OPT-0088",
+    "vendor_name": "Vendor 88",
+    "company_name": "Tech Systems Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Cables",
+      "Insulators"
+    ],
+    "prices": {
+      "Cables": 12042.34,
+      "Insulators": 11401.87
+    },
+    "reliability_score": 91.39,
+    "lead_time_days": 25,
+    "capacity": 3761,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 5.0,
+    "total_orders": 237
+  },
+  {
+    "vendor_id": "VEN-OPT-0089",
+    "vendor_name": "Vendor 89",
+    "company_name": "Grid Systems Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Earthing",
+      "Hardware"
+    ],
+    "prices": {
+      "Earthing": 17378.76,
+      "Hardware": 5870.13
+    },
+    "reliability_score": 83.07,
+    "lead_time_days": 13,
+    "capacity": 3037,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.2,
+    "total_orders": 210
+  },
+  {
+    "vendor_id": "VEN-OPT-0090",
+    "vendor_name": "Vendor 90",
+    "company_name": "Energy Industries Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 147341.79
+    },
+    "reliability_score": 76.37,
+    "lead_time_days": 9,
+    "capacity": 890,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.7,
+    "total_orders": 345
+  },
+  {
+    "vendor_id": "VEN-OPT-0091",
+    "vendor_name": "Vendor 91",
+    "company_name": "Grid Systems Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Transformers",
+      "Steel",
+      "Hardware"
+    ],
+    "prices": {
+      "Transformers": 106897.01,
+      "Steel": 27541.24,
+      "Hardware": 18937.81
+    },
+    "reliability_score": 83.62,
+    "lead_time_days": 12,
+    "capacity": 1949,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.0,
+    "total_orders": 292
+  },
+  {
+    "vendor_id": "VEN-OPT-0092",
+    "vendor_name": "Vendor 92",
+    "company_name": "Power Corp Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 3144.6
+    },
+    "reliability_score": 71.21,
+    "lead_time_days": 13,
+    "capacity": 790,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 220
+  },
+  {
+    "vendor_id": "VEN-OPT-0093",
+    "vendor_name": "Vendor 93",
+    "company_name": "Grid Systems Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Transformers",
+      "Hardware",
+      "Earthing"
+    ],
+    "prices": {
+      "Transformers": 112433.1,
+      "Hardware": 5470.95,
+      "Earthing": 7679.89
+    },
+    "reliability_score": 78.7,
+    "lead_time_days": 15,
+    "capacity": 2716,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.1,
+    "total_orders": 407
+  },
+  {
+    "vendor_id": "VEN-OPT-0094",
+    "vendor_name": "Vendor 94",
+    "company_name": "Grid Systems Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Switchgear",
+      "Steel"
+    ],
+    "prices": {
+      "Switchgear": 65484.72,
+      "Steel": 35329.35
+    },
+    "reliability_score": 92.35,
+    "lead_time_days": 5,
+    "capacity": 607,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.2,
+    "total_orders": 278
+  },
+  {
+    "vendor_id": "VEN-OPT-0095",
+    "vendor_name": "Vendor 95",
+    "company_name": "Grid Solutions Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Earthing",
+      "Conductors"
+    ],
+    "prices": {
+      "Earthing": 15563.82,
+      "Conductors": 6891.36
+    },
+    "reliability_score": 100,
+    "lead_time_days": 7,
+    "capacity": 4142,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.7,
+    "total_orders": 427
+  },
+  {
+    "vendor_id": "VEN-OPT-0096",
+    "vendor_name": "Vendor 96",
+    "company_name": "Electric Systems Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Towers",
+      "Switchgear"
+    ],
+    "prices": {
+      "Towers": 28295.26,
+      "Switchgear": 159874.03
+    },
+    "reliability_score": 91.56,
+    "lead_time_days": 8,
+    "capacity": 1750,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 146
+  },
+  {
+    "vendor_id": "VEN-OPT-0097",
+    "vendor_name": "Vendor 97",
+    "company_name": "Power Solutions Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Others",
+      "Switchgear"
+    ],
+    "prices": {
+      "Others": 11393.03,
+      "Switchgear": 55475.16
+    },
+    "reliability_score": 77.54,
+    "lead_time_days": 6,
+    "capacity": 1143,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.6,
+    "total_orders": 281
+  },
+  {
+    "vendor_id": "VEN-OPT-0098",
+    "vendor_name": "Vendor 98",
+    "company_name": "Tech Corp Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Towers",
+      "Conductors",
+      "Transformers"
+    ],
+    "prices": {
+      "Towers": 24029.93,
+      "Conductors": 8312.6,
+      "Transformers": 155546.16
+    },
+    "reliability_score": 75.83,
+    "lead_time_days": 8,
+    "capacity": 2230,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.3,
+    "total_orders": 153
+  },
+  {
+    "vendor_id": "VEN-OPT-0099",
+    "vendor_name": "Vendor 99",
+    "company_name": "Grid Solutions Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Insulators",
+      "Steel"
+    ],
+    "prices": {
+      "Insulators": 15225.59,
+      "Steel": 12305.61
+    },
+    "reliability_score": 89.53,
+    "lead_time_days": 10,
+    "capacity": 3733,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.4,
+    "total_orders": 347
+  },
+  {
+    "vendor_id": "VEN-OPT-0100",
+    "vendor_name": "Vendor 100",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Towers"
+    ],
+    "prices": {
+      "Towers": 45268.2
+    },
+    "reliability_score": 85.05,
+    "lead_time_days": 6,
+    "capacity": 4549,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.8,
+    "total_orders": 35
+  },
+  {
+    "vendor_id": "VEN-OPT-0101",
+    "vendor_name": "Vendor 101",
+    "company_name": "Grid Industries Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Steel"
+    ],
+    "prices": {
+      "Steel": 45465.29
+    },
+    "reliability_score": 98.66,
+    "lead_time_days": 20,
+    "capacity": 538,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.3,
+    "total_orders": 229
+  },
+  {
+    "vendor_id": "VEN-OPT-0102",
+    "vendor_name": "Vendor 102",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Steel",
+      "Insulators"
+    ],
+    "prices": {
+      "Steel": 46091.28,
+      "Insulators": 19617.27
+    },
+    "reliability_score": 94.37,
+    "lead_time_days": 9,
+    "capacity": 1338,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.6,
+    "total_orders": 283
+  },
+  {
+    "vendor_id": "VEN-OPT-0103",
+    "vendor_name": "Vendor 103",
+    "company_name": "Electric Corp Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Earthing",
+      "Others"
+    ],
+    "prices": {
+      "Earthing": 2129.88,
+      "Others": 6289.71
+    },
+    "reliability_score": 81.63,
+    "lead_time_days": 9,
+    "capacity": 4780,
+    "available": false,
+    "payment_terms": "45-days",
+    "rating": 4.6,
+    "total_orders": 480
+  },
+  {
+    "vendor_id": "VEN-OPT-0104",
+    "vendor_name": "Vendor 104",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Insulators",
+      "Cables",
+      "Transformers"
+    ],
+    "prices": {
+      "Insulators": 6430.4,
+      "Cables": 3638.51,
+      "Transformers": 188112.85
+    },
+    "reliability_score": 86.82,
+    "lead_time_days": 10,
+    "capacity": 3999,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.7,
+    "total_orders": 161
+  },
+  {
+    "vendor_id": "VEN-OPT-0105",
+    "vendor_name": "Vendor 105",
+    "company_name": "Power Systems Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Earthing",
+      "Transformers"
+    ],
+    "prices": {
+      "Earthing": 15820.9,
+      "Transformers": 159092.2
+    },
+    "reliability_score": 93.16,
+    "lead_time_days": 18,
+    "capacity": 3629,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 480
+  },
+  {
+    "vendor_id": "VEN-OPT-0106",
+    "vendor_name": "Vendor 106",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 8749.42
+    },
+    "reliability_score": 84.24,
+    "lead_time_days": 10,
+    "capacity": 3363,
+    "available": false,
+    "payment_terms": "60-days",
+    "rating": 4.2,
+    "total_orders": 396
+  },
+  {
+    "vendor_id": "VEN-OPT-0107",
+    "vendor_name": "Vendor 107",
+    "company_name": "Grid Systems Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Transformers",
+      "Conductors",
+      "Towers"
+    ],
+    "prices": {
+      "Transformers": 119847.24,
+      "Conductors": 15923.6,
+      "Towers": 48818.46
+    },
+    "reliability_score": 98.9,
+    "lead_time_days": 11,
+    "capacity": 943,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.5,
+    "total_orders": 482
+  },
+  {
+    "vendor_id": "VEN-OPT-0108",
+    "vendor_name": "Vendor 108",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 1666.15
+    },
+    "reliability_score": 89.63,
+    "lead_time_days": 20,
+    "capacity": 1441,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.2,
+    "total_orders": 275
+  },
+  {
+    "vendor_id": "VEN-OPT-0109",
+    "vendor_name": "Vendor 109",
+    "company_name": "Tech Industries Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Switchgear",
+      "Insulators",
+      "Others"
+    ],
+    "prices": {
+      "Switchgear": 95459.24,
+      "Insulators": 1259.61,
+      "Others": 5253.28
+    },
+    "reliability_score": 100,
+    "lead_time_days": 11,
+    "capacity": 3401,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.9,
+    "total_orders": 374
+  },
+  {
+    "vendor_id": "VEN-OPT-0110",
+    "vendor_name": "Vendor 110",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Conductors",
+      "Towers",
+      "Insulators"
+    ],
+    "prices": {
+      "Conductors": 14347.61,
+      "Towers": 10867.93,
+      "Insulators": 17008.14
+    },
+    "reliability_score": 85.86,
+    "lead_time_days": 5,
+    "capacity": 2975,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.0,
+    "total_orders": 480
+  },
+  {
+    "vendor_id": "VEN-OPT-0111",
+    "vendor_name": "Vendor 111",
+    "company_name": "Power Solutions Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Others",
+      "Conductors"
+    ],
+    "prices": {
+      "Others": 13917.91,
+      "Conductors": 8861.75
+    },
+    "reliability_score": 94.33,
+    "lead_time_days": 18,
+    "capacity": 1766,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.6,
+    "total_orders": 184
+  },
+  {
+    "vendor_id": "VEN-OPT-0112",
+    "vendor_name": "Vendor 112",
+    "company_name": "Electric Systems Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 92745.11
+    },
+    "reliability_score": 100,
+    "lead_time_days": 19,
+    "capacity": 1618,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 468
+  },
+  {
+    "vendor_id": "VEN-OPT-0113",
+    "vendor_name": "Vendor 113",
+    "company_name": "Power Engineering Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Conductors",
+      "Others"
+    ],
+    "prices": {
+      "Conductors": 3201.66,
+      "Others": 7446.34
+    },
+    "reliability_score": 81.44,
+    "lead_time_days": 5,
+    "capacity": 1775,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.0,
+    "total_orders": 168
+  },
+  {
+    "vendor_id": "VEN-OPT-0114",
+    "vendor_name": "Vendor 114",
+    "company_name": "Power Engineering Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Insulators",
+      "Switchgear",
+      "Hardware"
+    ],
+    "prices": {
+      "Insulators": 6289.1,
+      "Switchgear": 103317.03,
+      "Hardware": 10659.64
+    },
+    "reliability_score": 94.31,
+    "lead_time_days": 14,
+    "capacity": 4690,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.8,
+    "total_orders": 122
+  },
+  {
+    "vendor_id": "VEN-OPT-0115",
+    "vendor_name": "Vendor 115",
+    "company_name": "Energy Corp Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Towers"
+    ],
+    "prices": {
+      "Towers": 21065.74
+    },
+    "reliability_score": 88.79,
+    "lead_time_days": 18,
+    "capacity": 4834,
+    "available": false,
+    "payment_terms": "60-days",
+    "rating": 3.9,
+    "total_orders": 31
+  },
+  {
+    "vendor_id": "VEN-OPT-0116",
+    "vendor_name": "Vendor 116",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Steel"
+    ],
+    "prices": {
+      "Steel": 29970.44
+    },
+    "reliability_score": 100,
+    "lead_time_days": 5,
+    "capacity": 398,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 359
+  },
+  {
+    "vendor_id": "VEN-OPT-0117",
+    "vendor_name": "Vendor 117",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Switchgear",
+      "Hardware",
+      "Earthing"
+    ],
+    "prices": {
+      "Switchgear": 184621.87,
+      "Hardware": 3179.08,
+      "Earthing": 19534.88
+    },
+    "reliability_score": 81.01,
+    "lead_time_days": 13,
+    "capacity": 3537,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.9,
+    "total_orders": 407
+  },
+  {
+    "vendor_id": "VEN-OPT-0118",
+    "vendor_name": "Vendor 118",
+    "company_name": "Power Engineering Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Hardware",
+      "Transformers"
+    ],
+    "prices": {
+      "Hardware": 7724.73,
+      "Transformers": 105733.26
+    },
+    "reliability_score": 79.74,
+    "lead_time_days": 11,
+    "capacity": 4415,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.2,
+    "total_orders": 43
+  },
+  {
+    "vendor_id": "VEN-OPT-0119",
+    "vendor_name": "Vendor 119",
+    "company_name": "Electric Corp Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Others",
+      "Transformers"
+    ],
+    "prices": {
+      "Others": 7759.5,
+      "Transformers": 158751.42
+    },
+    "reliability_score": 69.48,
+    "lead_time_days": 10,
+    "capacity": 4696,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.2,
+    "total_orders": 242
+  },
+  {
+    "vendor_id": "VEN-OPT-0120",
+    "vendor_name": "Vendor 120",
+    "company_name": "Energy Systems Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Insulators",
+      "Earthing"
+    ],
+    "prices": {
+      "Insulators": 11862.58,
+      "Earthing": 5843.05
+    },
+    "reliability_score": 72.76,
+    "lead_time_days": 5,
+    "capacity": 4247,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.5,
+    "total_orders": 455
+  },
+  {
+    "vendor_id": "VEN-OPT-0121",
+    "vendor_name": "Vendor 121",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Earthing"
+    ],
+    "prices": {
+      "Earthing": 7751.41
+    },
+    "reliability_score": 91.09,
+    "lead_time_days": 13,
+    "capacity": 4703,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.9,
+    "total_orders": 145
+  },
+  {
+    "vendor_id": "VEN-OPT-0122",
+    "vendor_name": "Vendor 122",
+    "company_name": "Tech Engineering Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Transformers",
+      "Insulators"
+    ],
+    "prices": {
+      "Transformers": 70872.58,
+      "Insulators": 13566.31
+    },
+    "reliability_score": 76.46,
+    "lead_time_days": 16,
+    "capacity": 2554,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.5,
+    "total_orders": 131
+  },
+  {
+    "vendor_id": "VEN-OPT-0123",
+    "vendor_name": "Vendor 123",
+    "company_name": "Power Engineering Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Cables"
+    ],
+    "prices": {
+      "Cables": 3425.2
+    },
+    "reliability_score": 92.61,
+    "lead_time_days": 9,
+    "capacity": 3070,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.8,
+    "total_orders": 387
+  },
+  {
+    "vendor_id": "VEN-OPT-0124",
+    "vendor_name": "Vendor 124",
+    "company_name": "Electric Systems Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Conductors",
+      "Switchgear",
+      "Cables"
+    ],
+    "prices": {
+      "Conductors": 17510.6,
+      "Switchgear": 88500.28,
+      "Cables": 4455.2
+    },
+    "reliability_score": 88.06,
+    "lead_time_days": 7,
+    "capacity": 524,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.6,
+    "total_orders": 65
+  },
+  {
+    "vendor_id": "VEN-OPT-0125",
+    "vendor_name": "Vendor 125",
+    "company_name": "Tech Engineering Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 14202.71
+    },
+    "reliability_score": 68.45,
+    "lead_time_days": 20,
+    "capacity": 2461,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.5,
+    "total_orders": 166
+  },
+  {
+    "vendor_id": "VEN-OPT-0126",
+    "vendor_name": "Vendor 126",
+    "company_name": "Power Engineering Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 10941.27
+    },
+    "reliability_score": 61.44,
+    "lead_time_days": 10,
+    "capacity": 3583,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.2,
+    "total_orders": 344
+  },
+  {
+    "vendor_id": "VEN-OPT-0127",
+    "vendor_name": "Vendor 127",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Cables",
+      "Hardware",
+      "Towers"
+    ],
+    "prices": {
+      "Cables": 18111.48,
+      "Hardware": 1344.51,
+      "Towers": 29250.99
+    },
+    "reliability_score": 79.99,
+    "lead_time_days": 12,
+    "capacity": 2300,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.8,
+    "total_orders": 153
+  },
+  {
+    "vendor_id": "VEN-OPT-0128",
+    "vendor_name": "Vendor 128",
+    "company_name": "Grid Industries Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Cables",
+      "Conductors"
+    ],
+    "prices": {
+      "Cables": 15196.5,
+      "Conductors": 17326.93
+    },
+    "reliability_score": 81.49,
+    "lead_time_days": 5,
+    "capacity": 225,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.7,
+    "total_orders": 306
+  },
+  {
+    "vendor_id": "VEN-OPT-0129",
+    "vendor_name": "Vendor 129",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 149072.56
+    },
+    "reliability_score": 56.57,
+    "lead_time_days": 5,
+    "capacity": 2695,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.9,
+    "total_orders": 12
+  },
+  {
+    "vendor_id": "VEN-OPT-0130",
+    "vendor_name": "Vendor 130",
+    "company_name": "Tech Systems Ltd",
+    "location": "Mumbai",
+    "specializations": [
+      "Earthing"
+    ],
+    "prices": {
+      "Earthing": 15128.48
+    },
+    "reliability_score": 76.36,
+    "lead_time_days": 7,
+    "capacity": 153,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.0,
+    "total_orders": 145
+  },
+  {
+    "vendor_id": "VEN-OPT-0131",
+    "vendor_name": "Vendor 131",
+    "company_name": "Grid Corp Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Insulators",
+      "Earthing",
+      "Conductors"
+    ],
+    "prices": {
+      "Insulators": 8503.2,
+      "Earthing": 2984.47,
+      "Conductors": 18950.46
+    },
+    "reliability_score": 85.07,
+    "lead_time_days": 13,
+    "capacity": 1507,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.9,
+    "total_orders": 431
+  },
+  {
+    "vendor_id": "VEN-OPT-0132",
+    "vendor_name": "Vendor 132",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Conductors",
+      "Cables"
+    ],
+    "prices": {
+      "Conductors": 6273.21,
+      "Cables": 6569.79
+    },
+    "reliability_score": 76.4,
+    "lead_time_days": 16,
+    "capacity": 1190,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.5,
+    "total_orders": 327
+  },
+  {
+    "vendor_id": "VEN-OPT-0133",
+    "vendor_name": "Vendor 133",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 198369.93
+    },
+    "reliability_score": 100,
+    "lead_time_days": 12,
+    "capacity": 1287,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.9,
+    "total_orders": 172
+  },
+  {
+    "vendor_id": "VEN-OPT-0134",
+    "vendor_name": "Vendor 134",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Insulators",
+      "Others"
+    ],
+    "prices": {
+      "Insulators": 12470.51,
+      "Others": 17805.57
+    },
+    "reliability_score": 83.35,
+    "lead_time_days": 13,
+    "capacity": 2579,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.9,
+    "total_orders": 194
+  },
+  {
+    "vendor_id": "VEN-OPT-0135",
+    "vendor_name": "Vendor 135",
+    "company_name": "Energy Corp Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Transformers",
+      "Hardware",
+      "Towers"
+    ],
+    "prices": {
+      "Transformers": 115015.87,
+      "Hardware": 1802.06,
+      "Towers": 25075.98
+    },
+    "reliability_score": 80.05,
+    "lead_time_days": 10,
+    "capacity": 2398,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.9,
+    "total_orders": 163
+  },
+  {
+    "vendor_id": "VEN-OPT-0136",
+    "vendor_name": "Vendor 136",
+    "company_name": "Power Systems Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 17652.32
+    },
+    "reliability_score": 100,
+    "lead_time_days": 8,
+    "capacity": 195,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 253
+  },
+  {
+    "vendor_id": "VEN-OPT-0137",
+    "vendor_name": "Vendor 137",
+    "company_name": "Tech Corp Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Earthing",
+      "Transformers"
+    ],
+    "prices": {
+      "Earthing": 16360.6,
+      "Transformers": 69152.8
+    },
+    "reliability_score": 87.85,
+    "lead_time_days": 12,
+    "capacity": 3700,
+    "available": false,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 396
+  },
+  {
+    "vendor_id": "VEN-OPT-0138",
+    "vendor_name": "Vendor 138",
+    "company_name": "Energy Systems Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Insulators",
+      "Conductors"
+    ],
+    "prices": {
+      "Insulators": 18910.77,
+      "Conductors": 14539.05
+    },
+    "reliability_score": 87.95,
+    "lead_time_days": 10,
+    "capacity": 4454,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.6,
+    "total_orders": 480
+  },
+  {
+    "vendor_id": "VEN-OPT-0139",
+    "vendor_name": "Vendor 139",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 18914.41
+    },
+    "reliability_score": 73.71,
+    "lead_time_days": 13,
+    "capacity": 4710,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.5,
+    "total_orders": 425
+  },
+  {
+    "vendor_id": "VEN-OPT-0140",
+    "vendor_name": "Vendor 140",
+    "company_name": "Grid Solutions Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Towers"
+    ],
+    "prices": {
+      "Towers": 35900.41
+    },
+    "reliability_score": 83.26,
+    "lead_time_days": 18,
+    "capacity": 2416,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.4,
+    "total_orders": 105
+  },
+  {
+    "vendor_id": "VEN-OPT-0141",
+    "vendor_name": "Vendor 141",
+    "company_name": "Power Solutions Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 126274.36
+    },
+    "reliability_score": 76.22,
+    "lead_time_days": 13,
+    "capacity": 3094,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.7,
+    "total_orders": 497
+  },
+  {
+    "vendor_id": "VEN-OPT-0142",
+    "vendor_name": "Vendor 142",
+    "company_name": "Grid Corp Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Switchgear",
+      "Insulators"
+    ],
+    "prices": {
+      "Switchgear": 89451.77,
+      "Insulators": 19824.44
+    },
+    "reliability_score": 88.39,
+    "lead_time_days": 13,
+    "capacity": 4561,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 456
+  },
+  {
+    "vendor_id": "VEN-OPT-0143",
+    "vendor_name": "Vendor 143",
+    "company_name": "Tech Systems Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Steel"
+    ],
+    "prices": {
+      "Steel": 25834.05
+    },
+    "reliability_score": 81.0,
+    "lead_time_days": 5,
+    "capacity": 3183,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.9,
+    "total_orders": 430
+  },
+  {
+    "vendor_id": "VEN-OPT-0144",
+    "vendor_name": "Vendor 144",
+    "company_name": "Tech Systems Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 189602.66
+    },
+    "reliability_score": 75.73,
+    "lead_time_days": 5,
+    "capacity": 1116,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.4,
+    "total_orders": 193
+  },
+  {
+    "vendor_id": "VEN-OPT-0145",
+    "vendor_name": "Vendor 145",
+    "company_name": "Tech Engineering Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Others",
+      "Earthing"
+    ],
+    "prices": {
+      "Others": 1587.64,
+      "Earthing": 10399.45
+    },
+    "reliability_score": 91.96,
+    "lead_time_days": 11,
+    "capacity": 1161,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.4,
+    "total_orders": 406
+  },
+  {
+    "vendor_id": "VEN-OPT-0146",
+    "vendor_name": "Vendor 146",
+    "company_name": "Electric Systems Ltd",
+    "location": "Mumbai",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 62947.07
+    },
+    "reliability_score": 87.26,
+    "lead_time_days": 6,
+    "capacity": 1988,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 108
+  },
+  {
+    "vendor_id": "VEN-OPT-0147",
+    "vendor_name": "Vendor 147",
+    "company_name": "Power Systems Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Steel",
+      "Insulators"
+    ],
+    "prices": {
+      "Steel": 30352.9,
+      "Insulators": 13959.55
+    },
+    "reliability_score": 79.87,
+    "lead_time_days": 17,
+    "capacity": 4909,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 316
+  },
+  {
+    "vendor_id": "VEN-OPT-0148",
+    "vendor_name": "Vendor 148",
+    "company_name": "Electric Industries Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Conductors",
+      "Switchgear",
+      "Hardware"
+    ],
+    "prices": {
+      "Conductors": 15810.93,
+      "Switchgear": 143708.43,
+      "Hardware": 11459.02
+    },
+    "reliability_score": 81.66,
+    "lead_time_days": 12,
+    "capacity": 4629,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.7,
+    "total_orders": 65
+  },
+  {
+    "vendor_id": "VEN-OPT-0149",
+    "vendor_name": "Vendor 149",
+    "company_name": "Grid Systems Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Conductors",
+      "Cables",
+      "Steel"
+    ],
+    "prices": {
+      "Conductors": 18822.34,
+      "Cables": 12643.0,
+      "Steel": 21995.82
+    },
+    "reliability_score": 88.28,
+    "lead_time_days": 17,
+    "capacity": 3335,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.6,
+    "total_orders": 369
+  },
+  {
+    "vendor_id": "VEN-OPT-0150",
+    "vendor_name": "Vendor 150",
+    "company_name": "Tech Industries Ltd",
+    "location": "Mumbai",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 8647.78
+    },
+    "reliability_score": 72.97,
+    "lead_time_days": 7,
+    "capacity": 4693,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.6,
+    "total_orders": 469
+  },
+  {
+    "vendor_id": "VEN-OPT-0151",
+    "vendor_name": "Vendor 151",
+    "company_name": "Energy Systems Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Cables",
+      "Hardware"
+    ],
+    "prices": {
+      "Cables": 6563.65,
+      "Hardware": 17129.05
+    },
+    "reliability_score": 80.14,
+    "lead_time_days": 9,
+    "capacity": 3758,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 178
+  },
+  {
+    "vendor_id": "VEN-OPT-0152",
+    "vendor_name": "Vendor 152",
+    "company_name": "Power Systems Ltd",
+    "location": "Chandigarh",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 17254.47
+    },
+    "reliability_score": 100,
+    "lead_time_days": 13,
+    "capacity": 2680,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.5,
+    "total_orders": 281
+  },
+  {
+    "vendor_id": "VEN-OPT-0153",
+    "vendor_name": "Vendor 153",
+    "company_name": "Electric Industries Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Steel",
+      "Towers",
+      "Insulators"
+    ],
+    "prices": {
+      "Steel": 19093.2,
+      "Towers": 20329.0,
+      "Insulators": 4226.89
+    },
+    "reliability_score": 77.48,
+    "lead_time_days": 12,
+    "capacity": 233,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.6,
+    "total_orders": 198
+  },
+  {
+    "vendor_id": "VEN-OPT-0154",
+    "vendor_name": "Vendor 154",
+    "company_name": "Energy Industries Ltd",
+    "location": "Mumbai",
+    "specializations": [
+      "Earthing"
+    ],
+    "prices": {
+      "Earthing": 16633.83
+    },
+    "reliability_score": 99.44,
+    "lead_time_days": 15,
+    "capacity": 4513,
+    "available": false,
+    "payment_terms": "15-days",
+    "rating": 4.6,
+    "total_orders": 438
+  },
+  {
+    "vendor_id": "VEN-OPT-0155",
+    "vendor_name": "Vendor 155",
+    "company_name": "Power Systems Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Transformers",
+      "Conductors"
+    ],
+    "prices": {
+      "Transformers": 165830.32,
+      "Conductors": 19213.4
+    },
+    "reliability_score": 73.39,
+    "lead_time_days": 15,
+    "capacity": 2165,
+    "available": false,
+    "payment_terms": "45-days",
+    "rating": 4.0,
+    "total_orders": 379
+  },
+  {
+    "vendor_id": "VEN-OPT-0156",
+    "vendor_name": "Vendor 156",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Earthing",
+      "Towers"
+    ],
+    "prices": {
+      "Earthing": 16685.74,
+      "Towers": 14910.69
+    },
+    "reliability_score": 89.99,
+    "lead_time_days": 5,
+    "capacity": 3585,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.5,
+    "total_orders": 169
+  },
+  {
+    "vendor_id": "VEN-OPT-0157",
+    "vendor_name": "Vendor 157",
+    "company_name": "Electric Industries Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Others",
+      "Transformers"
+    ],
+    "prices": {
+      "Others": 19036.6,
+      "Transformers": 105455.45
+    },
+    "reliability_score": 82.34,
+    "lead_time_days": 7,
+    "capacity": 731,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.1,
+    "total_orders": 137
+  },
+  {
+    "vendor_id": "VEN-OPT-0158",
+    "vendor_name": "Vendor 158",
+    "company_name": "Grid Corp Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 61763.89
+    },
+    "reliability_score": 80.88,
+    "lead_time_days": 5,
+    "capacity": 2563,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.4,
+    "total_orders": 439
+  },
+  {
+    "vendor_id": "VEN-OPT-0159",
+    "vendor_name": "Vendor 159",
+    "company_name": "Power Corp Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Conductors",
+      "Others",
+      "Transformers"
+    ],
+    "prices": {
+      "Conductors": 17212.22,
+      "Others": 5012.61,
+      "Transformers": 102345.59
+    },
+    "reliability_score": 70.28,
+    "lead_time_days": 9,
+    "capacity": 1781,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.8,
+    "total_orders": 117
+  },
+  {
+    "vendor_id": "VEN-OPT-0160",
+    "vendor_name": "Vendor 160",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Earthing",
+      "Towers",
+      "Switchgear"
+    ],
+    "prices": {
+      "Earthing": 4158.8,
+      "Towers": 19437.35,
+      "Switchgear": 166337.89
+    },
+    "reliability_score": 87.6,
+    "lead_time_days": 20,
+    "capacity": 1413,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.6,
+    "total_orders": 239
+  },
+  {
+    "vendor_id": "VEN-OPT-0161",
+    "vendor_name": "Vendor 161",
+    "company_name": "Energy Industries Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Conductors",
+      "Towers",
+      "Transformers"
+    ],
+    "prices": {
+      "Conductors": 6723.14,
+      "Towers": 12868.04,
+      "Transformers": 173171.33
+    },
+    "reliability_score": 87.79,
+    "lead_time_days": 8,
+    "capacity": 1224,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.6,
+    "total_orders": 316
+  },
+  {
+    "vendor_id": "VEN-OPT-0162",
+    "vendor_name": "Vendor 162",
+    "company_name": "Power Systems Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Earthing",
+      "Insulators",
+      "Switchgear"
+    ],
+    "prices": {
+      "Earthing": 11615.88,
+      "Insulators": 4294.5,
+      "Switchgear": 64199.12
+    },
+    "reliability_score": 99.14,
+    "lead_time_days": 15,
+    "capacity": 1099,
+    "available": false,
+    "payment_terms": "45-days",
+    "rating": 4.2,
+    "total_orders": 69
+  },
+  {
+    "vendor_id": "VEN-OPT-0163",
+    "vendor_name": "Vendor 163",
+    "company_name": "Energy Industries Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Switchgear",
+      "Steel"
+    ],
+    "prices": {
+      "Switchgear": 71966.57,
+      "Steel": 21054.3
+    },
+    "reliability_score": 69.79,
+    "lead_time_days": 11,
+    "capacity": 4342,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.3,
+    "total_orders": 84
+  },
+  {
+    "vendor_id": "VEN-OPT-0164",
+    "vendor_name": "Vendor 164",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Switchgear",
+      "Hardware",
+      "Earthing"
+    ],
+    "prices": {
+      "Switchgear": 68111.08,
+      "Hardware": 6811.36,
+      "Earthing": 18828.99
+    },
+    "reliability_score": 78.5,
+    "lead_time_days": 12,
+    "capacity": 1149,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.8,
+    "total_orders": 125
+  },
+  {
+    "vendor_id": "VEN-OPT-0165",
+    "vendor_name": "Vendor 165",
+    "company_name": "Power Systems Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Switchgear",
+      "Hardware",
+      "Towers"
+    ],
+    "prices": {
+      "Switchgear": 178656.08,
+      "Hardware": 19515.26,
+      "Towers": 26702.9
+    },
+    "reliability_score": 90.63,
+    "lead_time_days": 5,
+    "capacity": 4947,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.4,
+    "total_orders": 406
+  },
+  {
+    "vendor_id": "VEN-OPT-0166",
+    "vendor_name": "Vendor 166",
+    "company_name": "Power Corp Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 3659.84
+    },
+    "reliability_score": 98.11,
+    "lead_time_days": 9,
+    "capacity": 644,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.5,
+    "total_orders": 242
+  },
+  {
+    "vendor_id": "VEN-OPT-0167",
+    "vendor_name": "Vendor 167",
+    "company_name": "Power Industries Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Others"
+    ],
+    "prices": {
+      "Others": 15899.66
+    },
+    "reliability_score": 83.42,
+    "lead_time_days": 17,
+    "capacity": 1009,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.5,
+    "total_orders": 80
+  },
+  {
+    "vendor_id": "VEN-OPT-0168",
+    "vendor_name": "Vendor 168",
+    "company_name": "Power Industries Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Transformers",
+      "Steel"
+    ],
+    "prices": {
+      "Transformers": 114978.75,
+      "Steel": 48786.5
+    },
+    "reliability_score": 74.97,
+    "lead_time_days": 9,
+    "capacity": 3202,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.0,
+    "total_orders": 432
+  },
+  {
+    "vendor_id": "VEN-OPT-0169",
+    "vendor_name": "Vendor 169",
+    "company_name": "Tech Corp Ltd",
+    "location": "Jaipur",
+    "specializations": [
+      "Earthing",
+      "Towers",
+      "Insulators"
+    ],
+    "prices": {
+      "Earthing": 5201.71,
+      "Towers": 15092.75,
+      "Insulators": 8247.6
+    },
+    "reliability_score": 69.11,
+    "lead_time_days": 5,
+    "capacity": 4758,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.4,
+    "total_orders": 204
+  },
+  {
+    "vendor_id": "VEN-OPT-0170",
+    "vendor_name": "Vendor 170",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Others",
+      "Conductors",
+      "Transformers"
+    ],
+    "prices": {
+      "Others": 12185.26,
+      "Conductors": 3197.5,
+      "Transformers": 89553.58
+    },
+    "reliability_score": 100,
+    "lead_time_days": 11,
+    "capacity": 1140,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 3.9,
+    "total_orders": 427
+  },
+  {
+    "vendor_id": "VEN-OPT-0171",
+    "vendor_name": "Vendor 171",
+    "company_name": "Power Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Conductors",
+      "Transformers"
+    ],
+    "prices": {
+      "Conductors": 4970.94,
+      "Transformers": 155458.14
+    },
+    "reliability_score": 97.81,
+    "lead_time_days": 7,
+    "capacity": 564,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.8,
+    "total_orders": 268
+  },
+  {
+    "vendor_id": "VEN-OPT-0172",
+    "vendor_name": "Vendor 172",
+    "company_name": "Tech Corp Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Steel",
+      "Conductors",
+      "Cables"
+    ],
+    "prices": {
+      "Steel": 36596.11,
+      "Conductors": 4049.74,
+      "Cables": 5205.07
+    },
+    "reliability_score": 86.47,
+    "lead_time_days": 6,
+    "capacity": 4566,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 126
+  },
+  {
+    "vendor_id": "VEN-OPT-0173",
+    "vendor_name": "Vendor 173",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 17837.08
+    },
+    "reliability_score": 86.42,
+    "lead_time_days": 8,
+    "capacity": 2845,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.8,
+    "total_orders": 294
+  },
+  {
+    "vendor_id": "VEN-OPT-0174",
+    "vendor_name": "Vendor 174",
+    "company_name": "Grid Industries Ltd",
+    "location": "Nagpur",
+    "specializations": [
+      "Insulators",
+      "Others",
+      "Cables"
+    ],
+    "prices": {
+      "Insulators": 3432.36,
+      "Others": 14320.59,
+      "Cables": 15458.06
+    },
+    "reliability_score": 85.11,
+    "lead_time_days": 22,
+    "capacity": 4192,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.4,
+    "total_orders": 331
+  },
+  {
+    "vendor_id": "VEN-OPT-0175",
+    "vendor_name": "Vendor 175",
+    "company_name": "Power Industries Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Steel",
+      "Insulators",
+      "Transformers"
+    ],
+    "prices": {
+      "Steel": 39380.2,
+      "Insulators": 2309.96,
+      "Transformers": 150766.88
+    },
+    "reliability_score": 100,
+    "lead_time_days": 15,
+    "capacity": 4673,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.9,
+    "total_orders": 112
+  },
+  {
+    "vendor_id": "VEN-OPT-0176",
+    "vendor_name": "Vendor 176",
+    "company_name": "Tech Corp Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Others",
+      "Insulators"
+    ],
+    "prices": {
+      "Others": 14120.07,
+      "Insulators": 15330.26
+    },
+    "reliability_score": 71.44,
+    "lead_time_days": 13,
+    "capacity": 1445,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.2,
+    "total_orders": 223
+  },
+  {
+    "vendor_id": "VEN-OPT-0177",
+    "vendor_name": "Vendor 177",
+    "company_name": "Electric Industries Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Transformers",
+      "Steel"
+    ],
+    "prices": {
+      "Transformers": 147595.12,
+      "Steel": 16407.73
+    },
+    "reliability_score": 76.57,
+    "lead_time_days": 9,
+    "capacity": 1653,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.3,
+    "total_orders": 273
+  },
+  {
+    "vendor_id": "VEN-OPT-0178",
+    "vendor_name": "Vendor 178",
+    "company_name": "Power Systems Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Hardware",
+      "Earthing",
+      "Others"
+    ],
+    "prices": {
+      "Hardware": 16829.4,
+      "Earthing": 6330.04,
+      "Others": 17052.64
+    },
+    "reliability_score": 79.46,
+    "lead_time_days": 8,
+    "capacity": 3774,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.7,
+    "total_orders": 55
+  },
+  {
+    "vendor_id": "VEN-OPT-0179",
+    "vendor_name": "Vendor 179",
+    "company_name": "Energy Corp Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Cables",
+      "Others"
+    ],
+    "prices": {
+      "Cables": 1526.71,
+      "Others": 4394.11
+    },
+    "reliability_score": 82.36,
+    "lead_time_days": 5,
+    "capacity": 1651,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.9,
+    "total_orders": 234
+  },
+  {
+    "vendor_id": "VEN-OPT-0180",
+    "vendor_name": "Vendor 180",
+    "company_name": "Electric Industries Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Earthing",
+      "Others"
+    ],
+    "prices": {
+      "Earthing": 16114.58,
+      "Others": 9428.92
+    },
+    "reliability_score": 84.08,
+    "lead_time_days": 10,
+    "capacity": 4546,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.0,
+    "total_orders": 123
+  },
+  {
+    "vendor_id": "VEN-OPT-0181",
+    "vendor_name": "Vendor 181",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Chennai",
+    "specializations": [
+      "Cables",
+      "Conductors"
+    ],
+    "prices": {
+      "Cables": 18206.56,
+      "Conductors": 6727.24
+    },
+    "reliability_score": 100,
+    "lead_time_days": 12,
+    "capacity": 1191,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.7,
+    "total_orders": 115
+  },
+  {
+    "vendor_id": "VEN-OPT-0182",
+    "vendor_name": "Vendor 182",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Earthing",
+      "Insulators",
+      "Steel"
+    ],
+    "prices": {
+      "Earthing": 7316.51,
+      "Insulators": 10227.53,
+      "Steel": 45245.44
+    },
+    "reliability_score": 71.91,
+    "lead_time_days": 16,
+    "capacity": 4701,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.3,
+    "total_orders": 475
+  },
+  {
+    "vendor_id": "VEN-OPT-0183",
+    "vendor_name": "Vendor 183",
+    "company_name": "Electric Industries Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Conductors",
+      "Others"
+    ],
+    "prices": {
+      "Conductors": 17306.99,
+      "Others": 19343.38
+    },
+    "reliability_score": 94.18,
+    "lead_time_days": 10,
+    "capacity": 2885,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.0,
+    "total_orders": 437
+  },
+  {
+    "vendor_id": "VEN-OPT-0184",
+    "vendor_name": "Vendor 184",
+    "company_name": "Power Solutions Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Hardware"
+    ],
+    "prices": {
+      "Hardware": 6604.15
+    },
+    "reliability_score": 63.5,
+    "lead_time_days": 8,
+    "capacity": 4939,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 3.7,
+    "total_orders": 218
+  },
+  {
+    "vendor_id": "VEN-OPT-0185",
+    "vendor_name": "Vendor 185",
+    "company_name": "Grid Industries Ltd",
+    "location": "Surat",
+    "specializations": [
+      "Towers",
+      "Cables",
+      "Steel"
+    ],
+    "prices": {
+      "Towers": 20979.96,
+      "Cables": 7864.88,
+      "Steel": 18190.2
+    },
+    "reliability_score": 74.3,
+    "lead_time_days": 12,
+    "capacity": 4984,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.5,
+    "total_orders": 497
+  },
+  {
+    "vendor_id": "VEN-OPT-0186",
+    "vendor_name": "Vendor 186",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Insulators"
+    ],
+    "prices": {
+      "Insulators": 19364.74
+    },
+    "reliability_score": 87.78,
+    "lead_time_days": 19,
+    "capacity": 2875,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.1,
+    "total_orders": 115
+  },
+  {
+    "vendor_id": "VEN-OPT-0187",
+    "vendor_name": "Vendor 187",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Transformers"
+    ],
+    "prices": {
+      "Transformers": 148304.11
+    },
+    "reliability_score": 92.12,
+    "lead_time_days": 5,
+    "capacity": 3779,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.8,
+    "total_orders": 473
+  },
+  {
+    "vendor_id": "VEN-OPT-0188",
+    "vendor_name": "Vendor 188",
+    "company_name": "Energy Industries Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Conductors",
+      "Others",
+      "Towers"
+    ],
+    "prices": {
+      "Conductors": 8612.33,
+      "Others": 6052.01,
+      "Towers": 30248.93
+    },
+    "reliability_score": 76.92,
+    "lead_time_days": 21,
+    "capacity": 2684,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.1,
+    "total_orders": 299
+  },
+  {
+    "vendor_id": "VEN-OPT-0189",
+    "vendor_name": "Vendor 189",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Indore",
+    "specializations": [
+      "Insulators",
+      "Cables"
+    ],
+    "prices": {
+      "Insulators": 10499.81,
+      "Cables": 10247.06
+    },
+    "reliability_score": 93.32,
+    "lead_time_days": 8,
+    "capacity": 1720,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.6,
+    "total_orders": 353
+  },
+  {
+    "vendor_id": "VEN-OPT-0190",
+    "vendor_name": "Vendor 190",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Transformers",
+      "Hardware"
+    ],
+    "prices": {
+      "Transformers": 112301.37,
+      "Hardware": 3663.07
+    },
+    "reliability_score": 73.48,
+    "lead_time_days": 5,
+    "capacity": 2162,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.7,
+    "total_orders": 82
+  },
+  {
+    "vendor_id": "VEN-OPT-0191",
+    "vendor_name": "Vendor 191",
+    "company_name": "Grid Industries Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Hardware",
+      "Others",
+      "Earthing"
+    ],
+    "prices": {
+      "Hardware": 3943.07,
+      "Others": 1319.5,
+      "Earthing": 19985.98
+    },
+    "reliability_score": 79.21,
+    "lead_time_days": 5,
+    "capacity": 1100,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.5,
+    "total_orders": 142
+  },
+  {
+    "vendor_id": "VEN-OPT-0192",
+    "vendor_name": "Vendor 192",
+    "company_name": "Electric Engineering Ltd",
+    "location": "Delhi",
+    "specializations": [
+      "Insulators",
+      "Switchgear"
+    ],
+    "prices": {
+      "Insulators": 17914.95,
+      "Switchgear": 172831.92
+    },
+    "reliability_score": 86.52,
+    "lead_time_days": 14,
+    "capacity": 3924,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.9,
+    "total_orders": 418
+  },
+  {
+    "vendor_id": "VEN-OPT-0193",
+    "vendor_name": "Vendor 193",
+    "company_name": "Energy Engineering Ltd",
+    "location": "Ahmedabad",
+    "specializations": [
+      "Switchgear",
+      "Cables",
+      "Earthing"
+    ],
+    "prices": {
+      "Switchgear": 184614.64,
+      "Cables": 14248.03,
+      "Earthing": 13976.91
+    },
+    "reliability_score": 87.81,
+    "lead_time_days": 14,
+    "capacity": 576,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.8,
+    "total_orders": 420
+  },
+  {
+    "vendor_id": "VEN-OPT-0194",
+    "vendor_name": "Vendor 194",
+    "company_name": "Energy Solutions Ltd",
+    "location": "Pune",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 98043.75
+    },
+    "reliability_score": 70.57,
+    "lead_time_days": 5,
+    "capacity": 3793,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 4.0,
+    "total_orders": 133
+  },
+  {
+    "vendor_id": "VEN-OPT-0195",
+    "vendor_name": "Vendor 195",
+    "company_name": "Electric Industries Ltd",
+    "location": "Bangalore",
+    "specializations": [
+      "Steel",
+      "Insulators",
+      "Towers"
+    ],
+    "prices": {
+      "Steel": 47946.72,
+      "Insulators": 14451.71,
+      "Towers": 31289.85
+    },
+    "reliability_score": 100,
+    "lead_time_days": 12,
+    "capacity": 2872,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 4.7,
+    "total_orders": 48
+  },
+  {
+    "vendor_id": "VEN-OPT-0196",
+    "vendor_name": "Vendor 196",
+    "company_name": "Electric Solutions Ltd",
+    "location": "Coimbatore",
+    "specializations": [
+      "Hardware",
+      "Conductors",
+      "Insulators"
+    ],
+    "prices": {
+      "Hardware": 13358.04,
+      "Conductors": 10036.75,
+      "Insulators": 6637.07
+    },
+    "reliability_score": 100,
+    "lead_time_days": 12,
+    "capacity": 4767,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.5,
+    "total_orders": 228
+  },
+  {
+    "vendor_id": "VEN-OPT-0197",
+    "vendor_name": "Vendor 197",
+    "company_name": "Grid Corp Ltd",
+    "location": "Lucknow",
+    "specializations": [
+      "Towers",
+      "Switchgear"
+    ],
+    "prices": {
+      "Towers": 42489.09,
+      "Switchgear": 170332.47
+    },
+    "reliability_score": 71.62,
+    "lead_time_days": 9,
+    "capacity": 384,
+    "available": true,
+    "payment_terms": "60-days",
+    "rating": 4.3,
+    "total_orders": 65
+  },
+  {
+    "vendor_id": "VEN-OPT-0198",
+    "vendor_name": "Vendor 198",
+    "company_name": "Grid Engineering Ltd",
+    "location": "Mumbai",
+    "specializations": [
+      "Cables",
+      "Steel",
+      "Earthing"
+    ],
+    "prices": {
+      "Cables": 7622.99,
+      "Steel": 45806.2,
+      "Earthing": 2122.81
+    },
+    "reliability_score": 91.14,
+    "lead_time_days": 18,
+    "capacity": 4203,
+    "available": true,
+    "payment_terms": "30-days",
+    "rating": 4.4,
+    "total_orders": 419
+  },
+  {
+    "vendor_id": "VEN-OPT-0199",
+    "vendor_name": "Vendor 199",
+    "company_name": "Tech Solutions Ltd",
+    "location": "Hyderabad",
+    "specializations": [
+      "Others",
+      "Transformers"
+    ],
+    "prices": {
+      "Others": 4942.62,
+      "Transformers": 177473.23
+    },
+    "reliability_score": 91.34,
+    "lead_time_days": 5,
+    "capacity": 3311,
+    "available": true,
+    "payment_terms": "15-days",
+    "rating": 3.7,
+    "total_orders": 474
+  },
+  {
+    "vendor_id": "VEN-OPT-0200",
+    "vendor_name": "Vendor 200",
+    "company_name": "Power Systems Ltd",
+    "location": "Kolkata",
+    "specializations": [
+      "Switchgear"
+    ],
+    "prices": {
+      "Switchgear": 178549.96
+    },
+    "reliability_score": 83.55,
+    "lead_time_days": 14,
+    "capacity": 3716,
+    "available": true,
+    "payment_terms": "45-days",
+    "rating": 3.7,
+    "total_orders": 278
+  }
+]

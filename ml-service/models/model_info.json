@@ -1,0 +1,32 @@
+{
+  "model_type": "RandomForestRegressor (Multi-target)",
+  "version": "1.0",
+  "trained_date": "2025-11-29T22:26:38.425518",
+  "accuracy": {
+    "steel": 0.9907049118781642,
+    "conductors": 0.9907033717478975,
+    "insulators": 0.9907211015119427,
+    "cement": 0.9987706123854853,
+    "nuts_bolts": 0.9996564736063448,
+    "earthing": 0.9987693531969848
+  },
+  "average_accuracy": 0.9948876373878033,
+  "features": [
+    "tower_count",
+    "voltage",
+    "tower_type",
+    "terrain",
+    "region",
+    "duration"
+  ],
+  "targets": [
+    "steel",
+    "conductors",
+    "insulators",
+    "cement",
+    "nuts_bolts",
+    "earthing"
+  ],
+  "training_samples": 800,
+  "test_samples": 200
+}

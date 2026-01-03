@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>India - Leaflet GeoJSON (Only India)</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body, html { height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; background:#f5f6f8; }
+    #map { width: 100%; height: 100vh; }
+    .controls { position: absolute; top: 12px; left: 12px; z-index: 1000; background: rgba(255,255,255,0.95); padding:8px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.12); }
+    .btn { display:inline-block; padding:6px 10px; margin-right:6px; border:1px solid #ddd; background:#fff; border-radius:6px; cursor:pointer; font-size:14px; }
+    .state-label { background: rgba(255,255,255,0.9); padding:2px 6px; border-radius:4px; border:1px solid #ccc; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div id="map" aria-label="Map showing India only"></div>
+
+  <div class="controls" id="controls" aria-hidden="false">
+    <button class="btn" id="fitBtn">Fit to India</button>
+    <button class="btn" id="toggleLabelsBtn">Toggle Labels</button>
+    <button class="btn" id="downloadBtn">Download GeoJSON</button>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    // 1) Setup basic Leaflet map (OpenStreetMap tiles - no API key)
+    const map = L.map('map', {
+      center: [22.0, 79.0],
+      zoom: 5,
+      minZoom: 3,
+      maxZoom: 18,
+      zoomControl: true
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+
+    // 2) Global variables
+    let indiaLayer = null;
+    let labelLayer = L.layerGroup().addTo(map);
+    let labelsVisible = true;
+
+    // Helper: style for India (and states if present)
+    function styleFeature(feature) {
+      return {
+        color: '#2B7BFF',        // border color
+        weight: 1.6,             // border thickness
+        fillColor: feature.properties && feature.properties.fill ? feature.properties.fill : '#ffd27f', // optional per-feature fill
+        fillOpacity: 0.65,
+        lineJoin: 'round'
+      };
+    }
+
+    // Helper: highlight on hover
+    function highlightFeature(e) {
+      const layer = e.target;
+      layer.setStyle({
+        weight: 2.6,
+        color: '#ff6b2d',
+        fillOpacity: 0.75
+      });
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+    }
+    function resetHighlight(e) {
+      indiaLayer.resetStyle(e.target);
+    }
+
+    // 3) Load India GeoJSON (expects 'india.geojson' next to this HTML)
+    //    Make sure the GeoJSON contains only India (country boundary) or state polygons for India.
+    fetch('india.geojson')
+      .then(r => {
+        if (!r.ok) throw new Error('Could not load india.geojson (check file path).');
+        return r.json();
+      })
+      .then(geojson => {
+        // Add layer
+        indiaLayer = L.geoJSON(geojson, {
+          style: styleFeature,
+          onEachFeature: function(feature, layer) {
+            // popup content: show name if available
+            const name = (feature.properties && (feature.properties.NAME || feature.properties.name || feature.properties.NAME_1)) || 'India';
+            let popupHtml = `<strong>${name}</strong>`;
+            // optionally add more info based on properties
+            if (feature.properties && feature.properties.description) {
+              popupHtml += `<div>${feature.properties.description}</div>`;
+            }
+            layer.bindPopup(popupHtml);
+
+            // hover events
+            layer.on({
+              mouseover: highlightFeature,
+              mouseout: resetHighlight,
+              click: (e) => {
+                // zoom to feature bounds on click with padding
+                try {
+                  map.fitBounds(e.target.getBounds(), { padding: [20, 20] });
+                } catch (err) { console.warn(err); }
+              }
+            });
+
+            // If the GeoJSON contains state-level polygons, create a label marker at centroid
+            if (feature.geometry && (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon')) {
+              const centroid = getFeatureCentroid(feature);
+              if (centroid) {
+                const labelHtml = `<div class="state-label">${name}</div>`;
+                const divIcon = L.divIcon({ html: labelHtml, className: 'state-label-wrapper', iconSize: null, popupAnchor: [0,-10] });
+                const lab = L.marker(centroid, { icon: divIcon, interactive: false }); // non-interactive label
+                labelLayer.addLayer(lab);
+              }
+            }
+          }
+        }).addTo(map);
+
+        // Fit map to India bounds
+        try {
+          map.fitBounds(indiaLayer.getBounds(), { padding: [24,24] });
+        } catch (err) {
+          // fallback: set center and zoom
+          console.warn('Could not compute bounds; using fallback center/zoom.', err);
+          map.setView([22,79], 5);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Failed to load india.geojson. Make sure the file exists next to this HTML and is a valid GeoJSON of India.');
+      });
+
+    // 4) Utility: get centroid of polygon / multipolygon (simple approach)
+    // Uses bounding box center as robust lightweight centroid for labeling
+    function getFeatureCentroid(feature) {
+      try {
+        // If MultiPolygon or Polygon: compute bounding box center of the feature's coordinates
+        const coords = feature.geometry.coordinates;
+        let all = [];
+        if (feature.geometry.type === 'Polygon') {
+          // coords: [ [ [lng,lat], ... ] , ... ]
+          coords[0].forEach(c => all.push(c));
+        } else if (feature.geometry.type === 'MultiPolygon') {
+          coords.forEach(poly => {
+            poly[0].forEach(c => all.push(c));
+          });
+        } else {
+          return null;
+        }
+        let lngs = all.map(c => c[0]);
+        let lats = all.map(c => c[1]);
+        const minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
+        const minLat = Math.min(...lats), maxLat = Math.max(...lats);
+        const centerLng = (minLng + maxLng) / 2;
+        const centerLat = (minLat + maxLat) / 2;
+        return [centerLat, centerLng];
+      } catch (e) {
+        console.warn('Centroid compute failed', e);
+        return null;
+      }
+    }
+
+    // 5) Controls: Fit & toggle labels
+    document.getElementById('fitBtn').addEventListener('click', () => {
+      if (indiaLayer) {
+        map.fitBounds(indiaLayer.getBounds(), { padding: [24,24] });
+      } else {
+        map.setView([22,79], 5);
+      }
+    });
+
+    document.getElementById('toggleLabelsBtn').addEventListener('click', () => {
+      labelsVisible = !labelsVisible;
+      if (labelsVisible) map.addLayer(labelLayer);
+      else map.removeLayer(labelLayer);
+    });
+
+    // 6) Download GeoJSON button (attempts to download the file currently loaded)
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      fetch('india.geojson')
+        .then(resp => resp.blob())
+        .then(blob => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'india.geojson';
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+        })
+        .catch(() => alert('Could not download india.geojson (file not found or blocked).'));
+    });
+
+  </script>
+</body>
+</html>

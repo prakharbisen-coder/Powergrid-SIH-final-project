@@ -1,0 +1,11 @@
+﻿{
+  "project_id": "PROJ001",
+  "project_name": "Test Project",
+  "tower_count": 10,
+  "voltage": "132kV",
+  "tower_type": "Suspension",
+  "terrain": "Plain",
+  "region": "North",
+  "start_date": "2025-01-01",
+  "end_date": "2025-12-31"
+}

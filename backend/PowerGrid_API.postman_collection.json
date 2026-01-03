@@ -1,0 +1,184 @@
+{
+  "info": {
+    "name": "Power Grid Backend API",
+    "description": "Complete API collection for Power Grid Prediction Flow Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\",\n  \"role\": \"user\",\n  \"department\": \"operations\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/auth/register", "host": ["{{base_url}}"], "path": ["api", "auth", "register"] }
+          }
+        },
+        {
+          "name": "Login User",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/auth/login", "host": ["{{base_url}}"], "path": ["api", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/auth/me", "host": ["{{base_url}}"], "path": ["api", "auth", "me"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Materials",
+      "item": [
+        {
+          "name": "Get All Materials",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/materials", "host": ["{{base_url}}"], "path": ["api", "materials"] }
+          }
+        },
+        {
+          "name": "Get Low Stock Materials",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/materials/low-stock", "host": ["{{base_url}}"], "path": ["api", "materials", "low-stock"] }
+          }
+        },
+        {
+          "name": "Create Material",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"materialId\": \"MAT-001\",\n  \"name\": \"132kV Transmission Tower\",\n  \"category\": \"Towers\",\n  \"quantity\": 245,\n  \"threshold\": 300,\n  \"location\": \"Delhi Region\",\n  \"reusable\": 45,\n  \"price\": 50000,\n  \"supplier\": \"ABC Industries\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/materials", "host": ["{{base_url}}"], "path": ["api", "materials"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Budget",
+      "item": [
+        {
+          "name": "Get All Budgets",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/budget", "host": ["{{base_url}}"], "path": ["api", "budget"] }
+          }
+        },
+        {
+          "name": "Create Budget",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category\": \"Towers\",\n  \"allocated\": 4500000,\n  \"spent\": 3890000,\n  \"projected\": 4200000,\n  \"fiscalYear\": \"2024-2025\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/budget", "host": ["{{base_url}}"], "path": ["api", "budget"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Forecasting",
+      "item": [
+        {
+          "name": "Get All Forecasts",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/forecasting", "host": ["{{base_url}}"], "path": ["api", "forecasting"] }
+          }
+        },
+        {
+          "name": "Create Forecast",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project\": \"NR-II Tower Line (Delhi)\",\n  \"material\": \"Tower Steel\",\n  \"duration\": 30,\n  \"accuracy\": 94.2,\n  \"status\": \"active\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/forecasting", "host": ["{{base_url}}"], "path": ["api", "forecasting"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Alerts",
+      "item": [
+        {
+          "name": "Get All Alerts",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/alerts", "host": ["{{base_url}}"], "path": ["api", "alerts"] }
+          }
+        },
+        {
+          "name": "Create Alert",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"critical\",\n  \"title\": \"Low Stock: Tower Steel\",\n  \"message\": \"Current stock is below threshold\",\n  \"category\": \"stock\",\n  \"priority\": 5\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/alerts", "host": ["{{base_url}}"], "path": ["api", "alerts"] }
+          }
+        },
+        {
+          "name": "Acknowledge Alert",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": { "raw": "{{base_url}}/api/alerts/:id/acknowledge", "host": ["{{base_url}}"], "path": ["api", "alerts", ":id", "acknowledge"] }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ]
+}

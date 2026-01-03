@@ -1,0 +1,47 @@
+[
+  {
+    "material_id": "MAT-001",
+    "material_name": "Steel Towers",
+    "category": "Towers",
+    "required_quantity": 50,
+    "unit": "units",
+    "urgency": "high",
+    "description": "Transmission tower structures"
+  },
+  {
+    "material_id": "MAT-002",
+    "material_name": "ACSR Conductors",
+    "category": "Conductors",
+    "required_quantity": 5000,
+    "unit": "meters",
+    "urgency": "high",
+    "description": "Aluminum conductor steel reinforced"
+  },
+  {
+    "material_id": "MAT-003",
+    "material_name": "Porcelain Insulators",
+    "category": "Insulators",
+    "required_quantity": 200,
+    "unit": "units",
+    "urgency": "medium",
+    "description": "High voltage insulators"
+  },
+  {
+    "material_id": "MAT-004",
+    "material_name": "Power Transformers",
+    "category": "Transformers",
+    "required_quantity": 10,
+    "unit": "units",
+    "urgency": "high",
+    "description": "Distribution transformers 100 KVA"
+  },
+  {
+    "material_id": "MAT-005",
+    "material_name": "Earthing Materials",
+    "category": "Earthing",
+    "required_quantity": 100,
+    "unit": "sets",
+    "urgency": "medium",
+    "description": "Earthing rods and accessories"
+  }
+]

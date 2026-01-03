@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Materials • POWERGRID</title>
+    <link rel="icon" href="../public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/assets/index-Clxbu0ud.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen w-full">
+      <aside class="w-64 bg-sidebar text-sidebar-foreground p-4">
+        <div class="mb-6 text-xl font-bold flex items-center gap-2"><i data-lucide="zap" class="h-5 w-5"></i>POWERGRID</div>
+        <nav class="space-y-1">
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./dashboard.html"><i data-lucide="layout-dashboard" class="h-4 w-4 mr-2 inline"></i>Dashboard</a>
+          <a class="block rounded-md p-2 bg-sidebar-accent text-sidebar-accent-foreground" href="./materials.html"><i data-lucide="package" class="h-4 w-4 mr-2 inline"></i>Materials</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./budget.html"><i data-lucide="dollar-sign" class="h-4 w-4 mr-2 inline"></i>Budget</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./analytics.html"><i data-lucide="bar-chart-3" class="h-4 w-4 mr-2 inline"></i>Analytics</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./scenarios.html"><i data-lucide="flask-conical" class="h-4 w-4 mr-2 inline"></i>Scenarios</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./chat.html"><i data-lucide="message-square" class="h-4 w-4 mr-2 inline"></i>AI Assistant</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./index.html"><i data-lucide="home" class="h-4 w-4 mr-2 inline"></i>Home</a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-6">
+        <div class="max-w-7xl mx-auto space-y-6">
+          <div class="flex justify-between items-center">
+            <div>
+              <h1 class="text-3xl font-bold">Material Tracking & Inventory</h1>
+              <p class="text-muted-foreground">Monitor stock levels and optimize material usage</p>
+            </div>
+            <div class="flex gap-2">
+              <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700"><i data-lucide="plus" class="h-4 w-4"></i>Add Material</button>
+              <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md border hover:bg-muted"><i data-lucide="download" class="h-4 w-4"></i>Export</button>
+            </div>
+          </div>
+          <div class="rounded-lg border p-4 space-y-4">
+            <form id="newMaterialForm" class="grid grid-cols-1 md:grid-cols-6 gap-3">
+              <input id="newName" required class="rounded-md border p-2" placeholder="Material name" />
+              <select id="newCategory" required class="rounded-md border p-2">
+                <option value="Towers">Towers</option>
+                <option value="Conductors">Conductors</option>
+                <option value="Substations">Substations</option>
+                <option value="Others">Others</option>
+              </select>
+              <input id="newUnit" required class="rounded-md border p-2" placeholder="Unit (e.g., tons)" />
+              <input id="newQuantity" required type="number" step="0.01" class="rounded-md border p-2" placeholder="Qty" />
+              <input id="newMinStock" required type="number" step="0.01" class="rounded-md border p-2" placeholder="Min stock" />
+              <select id="newRegion" required class="rounded-md border p-2">
+                <option>North India</option>
+                <option>South India</option>
+                <option>West India</option>
+                <option>East India</option>
+              </select>
+              <button type="submit" class="md:col-span-6 inline-flex items-center gap-2 px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700"><i data-lucide="plus" class="h-4 w-4"></i>Add</button>
+            </form>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <input id="filterSearch" class="rounded-md border p-2" placeholder="Search by name/category/region" />
+              <select id="filterStatus" class="rounded-md border p-2">
+                <option value="all">All Statuses</option>
+                <option value="in_stock">In Stock</option>
+                <option value="low_stock">Low Stock</option>
+                <option value="out_of_stock">Out of Stock</option>
+              </select>
+              <select id="filterCategory" class="rounded-md border p-2">
+                <option value="all">All Categories</option>
+              </select>
+            </div>
+
+            <div class="overflow-x-auto rounded-md border">
+              <table class="w-full text-sm">
+                <thead class="bg-muted">
+                  <tr>
+                    <th class="p-2 text-left">Name</th>
+                    <th class="p-2 text-left">Category</th>
+                    <th class="p-2 text-left">Region</th>
+                    <th class="p-2 text-left">Quantity</th>
+                    <th class="p-2 text-left">Min Stock</th>
+                    <th class="p-2 text-left">Status</th>
+                    <th class="p-2 text-right">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="materialsTableBody"></tbody>
+              </table>
+            </div>
+
+            <div class="flex justify-end">
+              <button id="exportBtn" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border hover:bg-muted"><i data-lucide="download" class="h-4 w-4"></i>Export CSV</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>if (window.lucide) window.lucide.createIcons();</script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/materials.js"></script>
+  </body>
+</html>

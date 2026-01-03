@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scenarios • POWERGRID</title>
+    <link rel="icon" href="../public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/assets/index-Clxbu0ud.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen w-full">
+      <aside class="w-64 bg-sidebar text-sidebar-foreground p-4">
+        <div class="mb-6 text-xl font-bold flex items-center gap-2"><i data-lucide="zap" class="h-5 w-5"></i>POWERGRID</div>
+        <nav class="space-y-1">
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./dashboard.html"><i data-lucide="layout-dashboard" class="h-4 w-4 mr-2 inline"></i>Dashboard</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./materials.html"><i data-lucide="package" class="h-4 w-4 mr-2 inline"></i>Materials</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./budget.html"><i data-lucide="dollar-sign" class="h-4 w-4 mr-2 inline"></i>Budget</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./analytics.html"><i data-lucide="bar-chart-3" class="h-4 w-4 mr-2 inline"></i>Analytics</a>
+          <a class="block rounded-md p-2 bg-sidebar-accent text-sidebar-accent-foreground" href="./scenarios.html"><i data-lucide="flask-conical" class="h-4 w-4 mr-2 inline"></i>Scenarios</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./chat.html"><i data-lucide="message-square" class="h-4 w-4 mr-2 inline"></i>AI Assistant</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./index.html"><i data-lucide="home" class="h-4 w-4 mr-2 inline"></i>Home</a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-6">
+        <div class="max-w-7xl mx-auto space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h1 class="text-3xl font-bold">Scenario Simulation</h1>
+              <p class="text-muted-foreground">Test different project configurations before implementation</p>
+            </div>
+            <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md border hover:bg-muted"><i data-lucide="refresh-cw" class="h-4 w-4"></i>Refresh</button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-lg border p-4">
+              <div class="text-lg font-semibold mb-2">Region</div>
+              <select id="selRegion" class="w-full rounded-md border p-2">
+                <option>North India</option>
+                <option>South India</option>
+                <option>West India</option>
+                <option>East India</option>
+              </select>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="text-lg font-semibold mb-2">Project Type</div>
+              <select id="selType" class="w-full rounded-md border p-2">
+                <option>Transmission Line</option>
+                <option>Substation</option>
+                <option>Hybrid Project</option>
+              </select>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="text-lg font-semibold mb-2">Timeline</div>
+              <select id="selTimeline" class="w-full rounded-md border p-2">
+                <option>3 Months</option>
+                <option>6 Months</option>
+                <option>12 Months</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <button id="createScenarioBtn" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground"><i data-lucide="flask-conical" class="h-4 w-4"></i>Create Scenario</button>
+          </div>
+          <div class="rounded-lg border p-4">
+            <div id="scenariosList"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>if (window.lucide) window.lucide.createIcons();</script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/scenarios.js"></script>
+  </body>
+</html>

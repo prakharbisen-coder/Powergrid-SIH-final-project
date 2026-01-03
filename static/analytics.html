@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analytics • POWERGRID</title>
+    <link rel="icon" href="../public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/assets/index-Clxbu0ud.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen w-full">
+      <aside class="w-64 bg-sidebar text-sidebar-foreground p-4">
+        <div class="mb-6 text-xl font-bold flex items-center gap-2"><i data-lucide="zap" class="h-5 w-5"></i>POWERGRID</div>
+        <nav class="space-y-1">
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./dashboard.html"><i data-lucide="layout-dashboard" class="h-4 w-4 mr-2 inline"></i>Dashboard</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./materials.html"><i data-lucide="package" class="h-4 w-4 mr-2 inline"></i>Materials</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./budget.html"><i data-lucide="dollar-sign" class="h-4 w-4 mr-2 inline"></i>Budget</a>
+          <a class="block rounded-md p-2 bg-sidebar-accent text-sidebar-accent-foreground" href="./analytics.html"><i data-lucide="bar-chart-3" class="h-4 w-4 mr-2 inline"></i>Analytics</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./scenarios.html"><i data-lucide="flask-conical" class="h-4 w-4 mr-2 inline"></i>Scenarios</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./chat.html"><i data-lucide="message-square" class="h-4 w-4 mr-2 inline"></i>AI Assistant</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./index.html"><i data-lucide="home" class="h-4 w-4 mr-2 inline"></i>Home</a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-6">
+        <div class="max-w-7xl mx-auto space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h1 class="text-3xl font-bold">Advanced Analytics</h1>
+              <p class="text-muted-foreground">Comprehensive insights and performance metrics</p>
+            </div>
+            <div class="flex gap-2">
+              <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md border hover:bg-muted"><i data-lucide="filter" class="h-4 w-4"></i>Filters</button>
+              <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md border hover:bg-muted"><i data-lucide="refresh-cw" class="h-4 w-4"></i>Refresh</button>
+              <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground"><i data-lucide="download" class="h-4 w-4"></i>Export</button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="rounded-lg border p-4"><div class="text-sm">Forecast Accuracy</div><div class="text-2xl font-bold">94%</div></div>
+            <div class="rounded-lg border p-4"><div class="text-sm">Lead Time</div><div class="text-2xl font-bold">12d</div></div>
+            <div class="rounded-lg border p-4"><div class="text-sm">Fulfillment</div><div class="text-2xl font-bold">88%</div></div>
+            <div class="rounded-lg border p-4"><div class="text-sm">Cost Efficiency</div><div class="text-2xl font-bold">+6%</div></div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="rounded-lg border p-4">
+              <div class="mb-2"><div class="text-lg font-semibold">Demand vs Fulfillment</div><div class="text-sm text-muted-foreground">Monthly metrics</div></div>
+              <canvas id="analyticsDemand" height="300"></canvas>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="mb-2"><div class="text-lg font-semibold">Material Category Performance</div><div class="text-sm text-muted-foreground">Accuracy, lead time, cost efficiency</div></div>
+              <canvas id="analyticsRadar" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script>if (window.lucide) window.lucide.createIcons();</script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/analytics.js"></script>
+  </body>
+</html>

@@ -1,0 +1,574 @@
+// Just replace the mock functions with actual API calls:
+const response = await axios.post('http://localhost:8000/api/ml/predict-cost', data);<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Optimization - MATRIX PowerGrid</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        @media (min-width: 1024px) {
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+        }
+        .tab-button {
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-size: 0.875rem;
+            padding: 0.75rem 1rem;
+        }
+        @media (min-width: 640px) {
+            .tab-button {
+                font-size: 1rem;
+                padding: 0.75rem 1.5rem;
+            }
+        }
+        .tab-button.active {
+            border-bottom-color: #667eea;
+            color: #667eea;
+        }
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+        .risk-critical { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
+        .risk-high { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); }
+        .risk-medium { background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); }
+        .risk-low { background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); }
+        
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .mobile-scroll {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .mobile-hide-icon {
+                display: none;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Better touch targets */
+        @media (max-width: 768px) {
+            input, select, button {
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-3 sm:px-6 py-3 sm:py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <i class="fas fa-bolt text-2xl sm:text-3xl gradient-bg text-transparent bg-clip-text"></i>
+                    <h1 class="text-base sm:text-xl md:text-2xl font-bold text-gray-800">
+                        <span class="hidden sm:inline">MATRIX - </span>Budget Optimization
+                    </h1>
+                </div>
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <span class="hidden sm:inline px-3 sm:px-4 py-1 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm font-semibold">
+                        <i class="fas fa-brain mr-1 sm:mr-2"></i>ML Powered
+                    </span>
+                    <span class="sm:hidden px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">
+                        <i class="fas fa-brain"></i>
+                    </span>
+                    <a href="dashboard.html" class="text-gray-600 hover:text-gray-800">
+                        <i class="fas fa-home text-lg sm:text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-3 sm:px-6 py-4 sm:py-8">
+        <!-- Header -->
+        <div class="mb-6 sm:mb-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 flex items-center gap-2 sm:gap-3">
+                        <i class="fas fa-brain text-purple-600 text-xl sm:text-2xl"></i>
+                        <span class="hidden sm:inline">Budget Optimization</span>
+                        <span class="sm:hidden">Optimization</span>
+                    </h2>
+                    <p class="text-gray-600 mt-1 sm:mt-2 text-sm sm:text-base">
+                        AI-powered predictions for <span class="hidden sm:inline">cost forecasting, budget management, and </span>material pricing
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ML Info Banner -->
+        <div class="mb-6 sm:mb-8 p-3 sm:p-4 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 sm:border-2 rounded-lg">
+            <div class="flex items-start gap-2 sm:gap-3">
+                <i class="fas fa-shield-alt text-purple-600 text-lg sm:text-xl mt-0.5 sm:mt-1 flex-shrink-0"></i>
+                <div class="text-sm sm:text-base">
+                    <strong class="text-gray-800">AI Models Active:</strong>
+                    <span class="text-gray-700"> Using Random Forest<span class="hidden sm:inline">, XGBoost, and ensemble methods</span> trained on historical project data<span class="hidden md:inline"> to provide accurate cost predictions and budget insights</span>.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="mb-4 sm:mb-6 border-b border-gray-200 overflow-x-auto mobile-scroll">
+            <div class="flex gap-2 sm:gap-4 md:gap-6 min-w-max sm:min-w-0">
+                <button class="tab-button active font-semibold text-gray-600" data-tab="cost-forecasting">
+                    <i class="fas fa-chart-line mr-1 sm:mr-2 mobile-hide-icon"></i>Cost<span class="hidden sm:inline"> Forecasting</span>
+                </button>
+                <button class="tab-button font-semibold text-gray-600" data-tab="budget-overrun">
+                    <i class="fas fa-exclamation-triangle mr-1 sm:mr-2 mobile-hide-icon"></i>Budget<span class="hidden sm:inline"> Overrun</span>
+                </button>
+                <button class="tab-button font-semibold text-gray-600" data-tab="material-pricing">
+                    <i class="fas fa-dollar-sign mr-1 sm:mr-2 mobile-hide-icon"></i>Material<span class="hidden sm:inline"> Pricing</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-content">
+            <!-- Cost Forecasting Tab -->
+            <div id="cost-forecasting-tab" class="tab-content">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+                    <!-- Input Form -->
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 card-hover">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
+                            <i class="fas fa-crosshairs text-purple-600"></i>
+                            Project Specifications
+                        </h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">Enter project details to predict total cost</p>
+
+                        <form id="cost-form" class="space-y-3 sm:space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Region</label>
+                                    <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="region">
+                                        <option value="North">North</option>
+                                        <option value="South">South</option>
+                                        <option value="East">East</option>
+                                        <option value="West">West</option>
+                                        <option value="Central">Central</option>
+                                        <option value="North-East">North-East</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Terrain</label>
+                                    <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="terrain">
+                                        <option value="Plain">Plain</option>
+                                        <option value="Hilly">Hilly</option>
+                                        <option value="Coastal">Coastal</option>
+                                        <option value="Desert">Desert</option>
+                                        <option value="Forest">Forest</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Tower Type</label>
+                                    <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="tower-type">
+                                        <option value="66kV Lattice">66kV Lattice</option>
+                                        <option value="132kV Lattice">132kV Lattice</option>
+                                        <option value="220kV Lattice" selected>220kV Lattice</option>
+                                        <option value="400kV Lattice">400kV Lattice</option>
+                                        <option value="765kV Lattice">765kV Lattice</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Voltage Level</label>
+                                    <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="voltage-level">
+                                        <option value="66kV">66kV</option>
+                                        <option value="132kV">132kV</option>
+                                        <option value="220kV" selected>220kV</option>
+                                        <option value="400kV">400kV</option>
+                                        <option value="765kV">765kV</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Tower Count</label>
+                                    <input type="number" value="75" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="tower-count">
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Line Length (km)</label>
+                                    <input type="number" value="100" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="line-length">
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Duration (days)</label>
+                                    <input type="number" value="180" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="duration">
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">GST (%)</label>
+                                    <input type="number" value="18" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="gst">
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="predictCost()" class="w-full gradient-bg text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg hover:shadow-lg transition-all text-sm sm:text-base">
+                                <i class="fas fa-brain mr-1 sm:mr-2"></i>Predict Project Cost
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 card-hover">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
+                            <i class="fas fa-chart-bar text-purple-600"></i>
+                            Cost Prediction
+                        </h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">AI-generated cost estimate</p>
+
+                        <div id="cost-results" class="text-center py-8 sm:py-12">
+                            <i class="fas fa-brain text-gray-400 text-4xl sm:text-6xl mb-3 sm:mb-4"></i>
+                            <p class="text-gray-500 text-sm sm:text-base px-2">Enter project specifications and click predict to see cost estimation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Budget Overrun Tab -->
+            <div id="budget-overrun-tab" class="tab-content hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+                    <!-- Input Form -->
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 card-hover">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
+                            <i class="fas fa-exclamation-triangle text-orange-600"></i>
+                            Budget Status
+                        </h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">Enter current budget details for overrun analysis</p>
+
+                        <form id="budget-form" class="space-y-3 sm:space-y-4">
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Budget Category</label>
+                                <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="budget-category">
+                                    <option value="Towers">Towers</option>
+                                    <option value="Conductors" selected>Conductors</option>
+                                    <option value="Substations">Substations</option>
+                                    <option value="Transformers">Transformers</option>
+                                    <option value="Labor">Labor</option>
+                                    <option value="Transport">Transport</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Allocated Amount (₹)</label>
+                                <input type="number" value="10000000" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="allocated-amount">
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Spent Amount (₹)</label>
+                                <input type="number" value="9500000" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="spent-amount">
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Utilization (%)</label>
+                                <input type="number" value="95" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="utilization">
+                            </div>
+
+                            <button type="button" onclick="predictOverrun()" class="w-full gradient-bg text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg hover:shadow-lg transition-all text-sm sm:text-base">
+                                <i class="fas fa-brain mr-1 sm:mr-2"></i>Analyze Budget Risk
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 card-hover">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
+                            <i class="fas fa-chart-pie text-purple-600"></i>
+                            Overrun Analysis
+                        </h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">AI-powered budget risk assessment</p>
+
+                        <div id="overrun-results" class="text-center py-8 sm:py-12">
+                            <i class="fas fa-exclamation-triangle text-gray-400 text-4xl sm:text-6xl mb-3 sm:mb-4"></i>
+                            <p class="text-gray-500 text-sm sm:text-base px-2">Enter budget details to analyze overrun risk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Material Pricing Tab -->
+            <div id="material-pricing-tab" class="tab-content hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+                    <!-- Input Form -->
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 card-hover">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
+                            <i class="fas fa-dollar-sign text-green-600"></i>
+                            Material Specifications
+                        </h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">Enter material details for price prediction</p>
+
+                        <form id="material-form" class="space-y-3 sm:space-y-4">
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Material Category</label>
+                                <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="material-category">
+                                    <option value="Steel" selected>Steel</option>
+                                    <option value="Conductors">Conductors</option>
+                                    <option value="Insulators">Insulators</option>
+                                    <option value="Cement">Cement</option>
+                                    <option value="Nuts/Bolts">Nuts/Bolts</option>
+                                    <option value="Earthing">Earthing</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Sub-Category</label>
+                                <select class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="material-subcategory">
+                                    <option value="Angle Steel" selected>Angle Steel</option>
+                                    <option value="Channel Steel">Channel Steel</option>
+                                    <option value="Flat Steel">Flat Steel</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Quantity</label>
+                                <input type="number" value="5000" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="quantity">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Thickness (mm)</label>
+                                    <input type="number" value="6" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="thickness">
+                                </div>
+                                <div>
+                                    <label class="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">Length (mm)</label>
+                                    <input type="number" value="6000" class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm sm:text-base" id="length">
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="predictMaterialPrice()" class="w-full gradient-bg text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg hover:shadow-lg transition-all text-sm sm:text-base">
+                                <i class="fas fa-brain mr-1 sm:mr-2"></i>Predict Material Price
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 card-hover">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
+                            <i class="fas fa-chart-line text-purple-600"></i>
+                            Price Prediction
+                        </h3>
+                        <p class="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">AI-based market price estimation</p>
+
+                        <div id="price-results" class="text-center py-8 sm:py-12">
+                            <i class="fas fa-dollar-sign text-gray-400 text-4xl sm:text-6xl mb-3 sm:mb-4"></i>
+                            <p class="text-gray-500 text-sm sm:text-base px-2">Enter material specifications to predict pricing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabName = button.getAttribute('data-tab');
+                
+                // Update button states
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Update tab content
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.add('hidden'));
+                document.getElementById(tabName + '-tab').classList.remove('hidden');
+            });
+        });
+
+        // Format currency
+        function formatCurrency(amount) {
+            if (amount >= 10000000) {
+                return `₹${(amount / 10000000).toFixed(2)} Cr`;
+            } else if (amount >= 100000) {
+                return `₹${(amount / 100000).toFixed(2)} L`;
+            } else {
+                return `₹${amount.toLocaleString('en-IN')}`;
+            }
+        }
+
+        // Predict Project Cost
+        function predictCost() {
+            const towerCount = parseInt(document.getElementById('tower-count').value);
+            const lineLength = parseFloat(document.getElementById('line-length').value);
+            const terrain = document.getElementById('terrain').value;
+            
+            const baselineCost = towerCount * 1000000 + lineLength * 500000;
+            const terrainMultipliers = {
+                'Plain': 1.0,
+                'Hilly': 1.3,
+                'Coastal': 1.2,
+                'Desert': 1.15,
+                'Forest': 1.25
+            };
+            
+            const predictedCost = baselineCost * (terrainMultipliers[terrain] || 1.0);
+            const materials = predictedCost * 0.60;
+            const labor = predictedCost * 0.20;
+            const equipment = predictedCost * 0.12;
+            const overhead = predictedCost * 0.08;
+            
+            const riskLevel = predictedCost > 100000000 ? 'High' : predictedCost > 50000000 ? 'Medium' : 'Low';
+            const riskClass = riskLevel === 'High' ? 'risk-high' : riskLevel === 'Medium' ? 'risk-medium' : 'risk-low';
+            
+            document.getElementById('cost-results').innerHTML = `
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-4 sm:p-6 rounded-lg border border-purple-200 sm:border-2">
+                        <div class="text-xs sm:text-sm text-gray-600 mb-1">Predicted Total Cost</div>
+                        <div class="text-2xl sm:text-4xl font-bold text-purple-700">${formatCurrency(predictedCost)}</div>
+                        <div class="flex flex-wrap items-center gap-2 sm:gap-4 mt-2 sm:mt-3 justify-center">
+                            <span class="px-2 sm:px-3 py-1 bg-white border border-gray-300 rounded-full text-xs sm:text-sm">Confidence: 85%</span>
+                            <span class="px-2 sm:px-3 py-1 ${riskClass} text-white rounded-full text-xs sm:text-sm font-semibold">${riskLevel} Risk</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 sm:space-y-3 text-left">
+                        <h4 class="font-semibold text-xs sm:text-sm text-gray-700">Cost Breakdown</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between p-2 sm:p-3 bg-gray-50 rounded-lg">
+                                <span class="text-xs sm:text-sm">Materials</span>
+                                <span class="font-semibold text-xs sm:text-sm">${formatCurrency(materials)}</span>
+                            </div>
+                            <div class="flex justify-between p-2 sm:p-3 bg-gray-50 rounded-lg">
+                                <span class="text-xs sm:text-sm">Labor</span>
+                                <span class="font-semibold text-xs sm:text-sm">${formatCurrency(labor)}</span>
+                            </div>
+                            <div class="flex justify-between p-2 sm:p-3 bg-gray-50 rounded-lg">
+                                <span class="text-xs sm:text-sm">Equipment</span>
+                                <span class="font-semibold text-xs sm:text-sm">${formatCurrency(equipment)}</span>
+                            </div>
+                            <div class="flex justify-between p-2 sm:p-3 bg-gray-50 rounded-lg">
+                                <span class="text-xs sm:text-sm">Overhead</span>
+                                <span class="font-semibold text-xs sm:text-sm">${formatCurrency(overhead)}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-2 sm:gap-3">
+                        <div class="p-2 sm:p-3 bg-blue-50 rounded-lg border border-blue-200">
+                            <div class="text-xs text-gray-600">Cost per Tower</div>
+                            <div class="text-sm sm:text-lg font-bold text-blue-700">${formatCurrency(predictedCost / towerCount)}</div>
+                        </div>
+                        <div class="p-2 sm:p-3 bg-green-50 rounded-lg border border-green-200">
+                            <div class="text-xs text-gray-600">Cost per km</div>
+                            <div class="text-sm sm:text-lg font-bold text-green-700">${formatCurrency(predictedCost / lineLength)}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Predict Budget Overrun
+        function predictOverrun() {
+            const utilization = parseFloat(document.getElementById('utilization').value);
+            const allocated = parseInt(document.getElementById('allocated-amount').value);
+            const spent = parseInt(document.getElementById('spent-amount').value);
+            
+            const willExceed = utilization > 100;
+            const probability = Math.min(100, Math.max(0, (utilization - 80) * 2));
+            const riskLevel = probability > 75 ? 'Critical' : probability > 50 ? 'High' : probability > 25 ? 'Medium' : 'Low';
+            const riskClass = riskLevel === 'Critical' ? 'risk-critical' : riskLevel === 'High' ? 'risk-high' : riskLevel === 'Medium' ? 'risk-medium' : 'risk-low';
+            
+            const statusBg = willExceed ? 'bg-red-50 border-red-300' : 'bg-green-50 border-green-300';
+            const statusIcon = willExceed ? 'fa-exclamation-triangle text-red-600' : 'fa-check-circle text-green-600';
+            const statusText = willExceed ? 'Will Exceed' : 'On Track';
+            
+            const recommendations = [
+                probability > 50 ? 'Immediate cost control measures required' : 'Monitor spending closely',
+                'Review procurement processes for cost savings',
+                'Consider alternative vendors for better pricing',
+                utilization > 90 ? 'Prioritize critical expenses only' : 'Maintain current budget discipline'
+            ];
+            
+            document.getElementById('overrun-results').innerHTML = `
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="p-4 sm:p-6 rounded-lg border sm:border-2 ${statusBg}">
+                        <div class="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                            <i class="fas ${statusIcon} text-2xl sm:text-4xl"></i>
+                            <div class="text-left">
+                                <div class="text-xs sm:text-sm text-gray-600">Budget Status</div>
+                                <div class="text-xl sm:text-2xl font-bold">${statusText}</div>
+                            </div>
+                        </div>
+                        <span class="inline-block px-2 sm:px-3 py-1 ${riskClass} text-white rounded-full text-xs sm:text-sm font-semibold">${riskLevel} Risk</span>
+                    </div>
+                    
+                    <div class="space-y-2 text-left">
+                        <div class="flex justify-between text-xs sm:text-sm">
+                            <span>Overrun Probability</span>
+                            <span class="font-bold">${probability.toFixed(1)}%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                            <div class="progress-bar ${riskClass} h-2 sm:h-3 rounded-full" style="width: ${probability}%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 sm:space-y-3 text-left">
+                        <h4 class="font-semibold text-xs sm:text-sm text-gray-700">Recommendations</h4>
+                        <div class="space-y-2">
+                            ${recommendations.map(rec => `
+                                <div class="flex items-start gap-2 p-2 sm:p-3 bg-blue-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-blue-600 mt-0.5 sm:mt-1 text-xs sm:text-sm flex-shrink-0"></i>
+                                    <span class="text-xs sm:text-sm">${rec}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Predict Material Price
+        function predictMaterialPrice() {
+            const category = document.getElementById('material-category').value;
+            const quantity = parseInt(document.getElementById('quantity').value);
+            
+            const basePrices = {
+                'Steel': 65,
+                'Conductors': 450,
+                'Insulators': 450,
+                'Cement': 420,
+                'Nuts/Bolts': 45,
+                'Earthing': 1200
+            };
+            
+            const basePrice = basePrices[category] || 100;
+            const predictedPrice = basePrice * (0.9 + Math.random() * 0.2);
+            const totalCost = predictedPrice * quantity;
+            const trend = Math.random() > 0.5 ? 'Increasing' : 'Stable';
+            const trendIcon = trend === 'Increasing' ? 'fa-arrow-trend-up' : 'fa-minus';
+            const trendColor = trend === 'Increasing' ? 'bg-orange-500' : 'bg-blue-500';
+            
+            document.getElementById('price-results').innerHTML = `
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 sm:p-6 rounded-lg border border-green-200 sm:border-2">
+                        <div class="text-xs sm:text-sm text-gray-600 mb-1">Predicted Unit Price</div>
+                        <div class="text-2xl sm:text-4xl font-bold text-green-700">₹${predictedPrice.toFixed(2)}</div>
+                        <div class="flex flex-wrap items-center gap-2 sm:gap-4 mt-2 sm:mt-3 justify-center">
+                            <span class="px-2 sm:px-3 py-1 bg-white border border-gray-300 rounded-full text-xs sm:text-sm">Confidence: 82%</span>
+                            <span class="px-2 sm:px-3 py-1 ${trendColor} text-white rounded-full text-xs sm:text-sm font-semibold">
+                                <i class="fas ${trendIcon} mr-1"></i>${trend}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-3 sm:p-4 bg-blue-50 rounded-lg border border-blue-200 text-left">
+                        <div class="text-xs sm:text-sm text-gray-600 mb-1">Total Cost for ${quantity} units</div>
+                        <div class="text-xl sm:text-2xl font-bold text-blue-700">${formatCurrency(totalCost)}</div>
+                    </div>
+                    
+                    <div class="p-3 sm:p-4 ${trend === 'Increasing' ? 'bg-orange-50 border-orange-200' : 'bg-blue-50 border-blue-200'} border rounded-lg text-left text-xs sm:text-sm">
+                        <strong>Market Insight:</strong> ${
+                            trend === 'Increasing' 
+                                ? 'Prices are trending upward. Consider purchasing soon to lock in current rates.' 
+                                : 'Prices are stable. Good time for procurement planning.'
+                        }
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

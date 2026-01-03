@@ -1,0 +1,320 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Maharashtra",
+        "name": "Maharashtra",
+        "description": "Capital: Mumbai",
+        "fill": "#ffb84d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.6369, 20.7470],
+            [77.8940, 20.7470],
+            [77.8940, 16.0050],
+            [72.6369, 16.0050],
+            [72.6369, 20.7470]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gujarat",
+        "name": "Gujarat",
+        "description": "Capital: Gandhinagar",
+        "fill": "#4dd4ac"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [68.1593, 24.7062],
+            [74.4669, 24.7062],
+            [74.4669, 20.0692],
+            [68.1593, 20.0692],
+            [68.1593, 24.7062]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Rajasthan",
+        "name": "Rajasthan",
+        "description": "Capital: Jaipur",
+        "fill": "#ff6b9d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [69.5000, 30.2000],
+            [78.5000, 30.2000],
+            [78.5000, 23.0000],
+            [69.5000, 23.0000],
+            [69.5000, 30.2000]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Uttar Pradesh",
+        "name": "Uttar Pradesh",
+        "description": "Capital: Lucknow",
+        "fill": "#a78bfa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.0830, 30.4500],
+            [84.6357, 30.4500],
+            [84.6357, 23.8722],
+            [77.0830, 23.8722],
+            [77.0830, 30.4500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Madhya Pradesh",
+        "name": "Madhya Pradesh",
+        "description": "Capital: Bhopal",
+        "fill": "#fbbf24"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.0260, 26.8467],
+            [82.7985, 26.8467],
+            [82.7985, 21.0785],
+            [74.0260, 21.0785],
+            [74.0260, 26.8467]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Karnataka",
+        "name": "Karnataka",
+        "description": "Capital: Bangalore",
+        "fill": "#34d399"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.0550, 18.4500],
+            [78.5850, 18.4500],
+            [78.5850, 11.5945],
+            [74.0550, 11.5945],
+            [74.0550, 18.4500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Tamil Nadu",
+        "name": "Tamil Nadu",
+        "description": "Capital: Chennai",
+        "fill": "#60a5fa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [76.2300, 13.5000],
+            [80.3450, 13.5000],
+            [80.3450, 8.0883],
+            [76.2300, 8.0883],
+            [76.2300, 13.5000]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "West Bengal",
+        "name": "West Bengal",
+        "description": "Capital: Kolkata",
+        "fill": "#fb923c"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [85.8249, 27.3624],
+            [89.8548, 27.3624],
+            [89.8548, 21.4960],
+            [85.8249, 21.4960],
+            [85.8249, 27.3624]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Bihar",
+        "name": "Bihar",
+        "description": "Capital: Patna",
+        "fill": "#f472b6"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [83.3200, 27.5219],
+            [88.2800, 27.5219],
+            [88.2800, 24.2900],
+            [83.3200, 24.2900],
+            [83.3200, 27.5219]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Andhra Pradesh",
+        "name": "Andhra Pradesh",
+        "description": "Capital: Amaravati",
+        "fill": "#2dd4bf"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [76.7540, 19.9160],
+            [84.7747, 19.9160],
+            [84.7747, 12.6209],
+            [76.7540, 12.6209],
+            [76.7540, 19.9160]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Telangana",
+        "name": "Telangana",
+        "description": "Capital: Hyderabad",
+        "fill": "#c084fc"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.2370, 19.9160],
+            [81.8247, 19.9160],
+            [81.8247, 15.8000],
+            [77.2370, 15.8000],
+            [77.2370, 19.9160]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Kerala",
+        "name": "Kerala",
+        "description": "Capital: Thiruvananthapuram",
+        "fill": "#4ade80"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.8520, 12.7840],
+            [77.4170, 12.7840],
+            [77.4170, 8.1771],
+            [74.8520, 8.1771],
+            [74.8520, 12.7840]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Punjab",
+        "name": "Punjab",
+        "description": "Capital: Chandigarh",
+        "fill": "#facc15"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.8770, 32.5731],
+            [76.9290, 32.5731],
+            [76.9290, 29.5367],
+            [73.8770, 29.5367],
+            [73.8770, 32.5731]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Haryana",
+        "name": "Haryana",
+        "description": "Capital: Chandigarh",
+        "fill": "#fb7185"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.4730, 30.9300],
+            [77.5780, 30.9300],
+            [77.5780, 27.6520],
+            [74.4730, 27.6520],
+            [74.4730, 30.9300]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Odisha",
+        "name": "Odisha",
+        "description": "Capital: Bhubaneswar",
+        "fill": "#38bdf8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [81.3760, 22.5693],
+            [87.4890, 22.5693],
+            [87.4890, 17.7800],
+            [81.3760, 17.7800],
+            [81.3760, 22.5693]
+          ]
+        ]
+      }
+    }
+  ]
+}

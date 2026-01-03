@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard • POWERGRID</title>
+    <link rel="icon" href="../public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/assets/index-Clxbu0ud.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen w-full">
+      <aside class="w-64 bg-sidebar text-sidebar-foreground p-4">
+        <div class="mb-6 text-xl font-bold flex items-center gap-2">
+          <i data-lucide="zap" class="h-5 w-5"></i>
+          POWERGRID
+        </div>
+        <nav class="space-y-1">
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./dashboard.html"><i data-lucide="layout-dashboard" class="h-4 w-4 mr-2 inline"></i>Dashboard</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./materials.html"><i data-lucide="package" class="h-4 w-4 mr-2 inline"></i>Materials</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./budget.html"><i data-lucide="dollar-sign" class="h-4 w-4 mr-2 inline"></i>Budget</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./analytics.html"><i data-lucide="bar-chart-3" class="h-4 w-4 mr-2 inline"></i>Analytics</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./scenarios.html"><i data-lucide="flask-conical" class="h-4 w-4 mr-2 inline"></i>Scenarios</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./chat.html"><i data-lucide="message-square" class="h-4 w-4 mr-2 inline"></i>AI Assistant</a>
+          <a class="block rounded-md p-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" href="./index.html"><i data-lucide="home" class="h-4 w-4 mr-2 inline"></i>Home</a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-6">
+        <div class="max-w-7xl mx-auto space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h1 class="text-3xl font-bold">Dashboard</h1>
+              <p class="text-muted-foreground">Overview and key performance indicators</p>
+            </div>
+            <button class="inline-flex items-center gap-2 px-4 py-2 rounded-md border hover:bg-muted">
+              <i data-lucide="refresh-cw" class="h-4 w-4"></i>
+              Refresh
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="rounded-lg border p-4">
+              <div class="flex items-center justify-between mb-2">
+                <div class="text-sm font-medium">Forecast Accuracy</div>
+                <i data-lucide="trending-up" class="h-4 w-4 text-success"></i>
+              </div>
+              <div class="text-2xl font-bold">94.2%</div>
+              <p class="text-xs text-success flex items-center gap-1 mt-1"><i data-lucide="trending-up" class="h-3 w-3"></i>+2.4% from last month</p>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="flex items-center justify-between mb-2">
+                <div class="text-sm font-medium">Material Stock</div>
+                <i data-lucide="package" class="h-4 w-4 text-accent"></i>
+              </div>
+              <div class="text-2xl font-bold">8,547</div>
+              <p class="text-xs text-destructive flex items-center gap-1 mt-1"><i data-lucide="trending-down" class="h-3 w-3"></i>-3.2% from last month</p>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="flex items-center justify-between mb-2">
+                <div class="text-sm font-medium">Budget Utilization</div>
+                <i data-lucide="dollar-sign" class="h-4 w-4 text-primary"></i>
+              </div>
+              <div class="text-2xl font-bold">82%</div>
+              <p class="text-xs text-success flex items-center gap-1 mt-1"><i data-lucide="trending-up" class="h-3 w-3"></i>+1.1% from last month</p>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="flex items-center justify-between mb-2">
+                <div class="text-sm font-medium">Alerts</div>
+                <i data-lucide="alert-triangle" class="h-4 w-4 text-destructive"></i>
+              </div>
+              <div class="text-2xl font-bold">7</div>
+              <p class="text-xs text-muted-foreground mt-1">Pending actions</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="rounded-lg border p-4">
+              <div class="mb-2">
+                <div class="text-lg font-semibold">Material Demand Forecast</div>
+                <div class="text-sm text-muted-foreground">AI-predicted vs actual demand (in tons)</div>
+              </div>
+              <canvas id="demandChart" height="300"></canvas>
+            </div>
+            <div class="rounded-lg border p-4">
+              <div class="mb-2">
+                <div class="text-lg font-semibold">Material Distribution</div>
+                <div class="text-sm text-muted-foreground">Category breakdown</div>
+              </div>
+              <canvas id="distributionChart" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script>if (window.lucide) window.lucide.createIcons();</script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>

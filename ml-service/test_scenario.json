@@ -1,0 +1,7 @@
+﻿{
+  "project_id": "P001",
+  "region_id": "R001",
+  "horizon_months": 6,
+  "demand_change_percent": 15,
+  "cost_change_percent": 10
+}

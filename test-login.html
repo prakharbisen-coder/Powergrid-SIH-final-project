@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Login</title>
+</head>
+<body>
+    <h1>Test Login</h1>
+    <input type="email" id="email" placeholder="Email" value="admin@powergrid.com">
+    <input type="password" id="password" placeholder="Password" value="admin123">
+    <button onclick="testLogin()">Login</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function testLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const resultDiv = document.getElementById('result');
+
+            try {
+                const response = await fetch('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await response.json();
+                resultDiv.textContent = JSON.stringify(data, null, 2);
+
+                if (data.success) {
+                    resultDiv.style.color = 'green';
+                    console.log('Login successful!', data);
+                } else {
+                    resultDiv.style.color = 'red';
+                    console.error('Login failed:', data.message);
+                }
+            } catch (error) {
+                resultDiv.textContent = 'Error: ' + error.message;
+                resultDiv.style.color = 'red';
+                console.error('Request error:', error);
+            }
+        }
+    </script>
+</body>
+</html>
